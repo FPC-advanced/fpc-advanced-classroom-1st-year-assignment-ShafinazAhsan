@@ -25,7 +25,7 @@ void output(int n,int result){
         printf("%d is a composite number.", n);
     }
     else{
-        printf("%d is not a composite bumber.",n);
+        printf("%d is not a composite number.",n);
     }
 }
 int main(){
