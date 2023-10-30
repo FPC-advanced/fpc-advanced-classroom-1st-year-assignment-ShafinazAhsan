@@ -15,11 +15,19 @@ void input_array(int n, int a[n]) {
 int sum_composite_numbers(int n, int a[n]) {
     int sum = 0;
     for (int i = 0; i < n; i++) {
-        if (a[i]<=1) {
-            continue;
+        if (a[i] <= 1) {
+            continue; 
         }
-        int is_composite=0;
-        for (int j=2;)
+        int isComposite = 0;
+        for (int j = 2; j < a[i]; j++) {
+            if (a[i] % j == 0) {
+                isComposite = 1;
+                break;
+            }
+        }
+        if (isComposite) {
+            sum += a[i];
+        }
     }
     return sum;
 }
