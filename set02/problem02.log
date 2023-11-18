@@ -1,0 +1,112 @@
+ Processing command: b 11
+ HandleCommand, cmd_obj : '_regexp-break'
+ HandleCommand, (revised) command_string: '_regexp-break 11'
+ HandleCommand, wants_raw_input:'True'
+ HandleCommand, command line after removing command name(s): '11'
+ Processing command: breakpoint set --line 11
+ HandleCommand, cmd_obj : 'breakpoint set'
+ HandleCommand, (revised) command_string: 'breakpoint set --line 11'
+ HandleCommand, wants_raw_input:'False'
+ HandleCommand, command line after removing command name(s): '--line 11'
+ HandleCommand, command did not succeed
+ HandleCommand, command did not succeed
+ Processing command: b 20
+ HandleCommand, cmd_obj : '_regexp-break'
+ HandleCommand, (revised) command_string: '_regexp-break 20'
+ HandleCommand, wants_raw_input:'True'
+ HandleCommand, command line after removing command name(s): '20'
+ Processing command: breakpoint set --line 20
+ HandleCommand, cmd_obj : 'breakpoint set'
+ HandleCommand, (revised) command_string: 'breakpoint set --line 20'
+ HandleCommand, wants_raw_input:'False'
+ HandleCommand, command line after removing command name(s): '--line 20'
+ HandleCommand, command did not succeed
+ HandleCommand, command did not succeed
+ Processing command: b main
+ HandleCommand, cmd_obj : '_regexp-break'
+ HandleCommand, (revised) command_string: '_regexp-break main'
+ HandleCommand, wants_raw_input:'True'
+ HandleCommand, command line after removing command name(s): 'main'
+ Processing command: breakpoint set --name 'main'
+ HandleCommand, cmd_obj : 'breakpoint set'
+ HandleCommand, (revised) command_string: 'breakpoint set --name 'main''
+ HandleCommand, wants_raw_input:'False'
+ HandleCommand, command line after removing command name(s): '--name 'main''
+ Target::AddBreakpoint (internal = no) => break_id = 1: name = 'main'
+
+
+ HandleCommand, command succeeded
+ HandleCommand, command succeeded
+ Processing command: br l
+ HandleCommand, cmd_obj : 'breakpoint list'
+ HandleCommand, (revised) command_string: 'breakpoint list'
+ HandleCommand, wants_raw_input:'False'
+ HandleCommand, command line after removing command name(s): ''
+ HandleCommand, command succeeded
+ Processing command: b problem02.c:11
+ HandleCommand, cmd_obj : '_regexp-break'
+ HandleCommand, (revised) command_string: '_regexp-break problem02.c:11'
+ HandleCommand, wants_raw_input:'True'
+ HandleCommand, command line after removing command name(s): 'problem02.c:11'
+ Processing command: breakpoint set --file 'problem02.c' --line 11
+ HandleCommand, cmd_obj : 'breakpoint set'
+ HandleCommand, (revised) command_string: 'breakpoint set --file 'problem02.c' --line 11'
+ HandleCommand, wants_raw_input:'False'
+ HandleCommand, command line after removing command name(s): '--file 'problem02.c' --line 11'
+ Target::AddBreakpoint (internal = no) => break_id = 2: file = 'problem02.c', line = 11, exact_match = 0
+
+
+ HandleCommand, command succeeded
+ HandleCommand, command succeeded
+ Processing command: b problem02.c:20
+ HandleCommand, cmd_obj : '_regexp-break'
+ HandleCommand, (revised) command_string: '_regexp-break problem02.c:20'
+ HandleCommand, wants_raw_input:'True'
+ HandleCommand, command line after removing command name(s): 'problem02.c:20'
+ Processing command: breakpoint set --file 'problem02.c' --line 20
+ HandleCommand, cmd_obj : 'breakpoint set'
+ HandleCommand, (revised) command_string: 'breakpoint set --file 'problem02.c' --line 20'
+ HandleCommand, wants_raw_input:'False'
+ HandleCommand, command line after removing command name(s): '--file 'problem02.c' --line 20'
+ Target::AddBreakpoint (internal = no) => break_id = 3: file = 'problem02.c', line = 20, exact_match = 0
+
+
+ HandleCommand, command succeeded
+ HandleCommand, command succeeded
+ Processing command: br l
+ HandleCommand, cmd_obj : 'breakpoint list'
+ HandleCommand, (revised) command_string: 'breakpoint list'
+ HandleCommand, wants_raw_input:'False'
+ HandleCommand, command line after removing command name(s): ''
+ HandleCommand, command succeeded
+ Processing command: r
+ HandleCommand, cmd_obj : 'process launch'
+ HandleCommand, (revised) command_string: 'process launch -X true --'
+ HandleCommand, wants_raw_input:'False'
+ Repeat command: 
+ HandleCommand, command line after removing command name(s): '-X true --'
+ HandleCommand, command did not succeed
+ Processing command: s
+ HandleCommand, cmd_obj : 'thread step-in'
+ HandleCommand, (revised) command_string: 'thread step-in'
+ HandleCommand, wants_raw_input:'False'
+ HandleCommand, command line after removing command name(s): ''
+ HandleCommand, command did not succeed
+ Processing command: n
+ HandleCommand, cmd_obj : 'thread step-over'
+ HandleCommand, (revised) command_string: 'thread step-over'
+ HandleCommand, wants_raw_input:'False'
+ HandleCommand, command line after removing command name(s): ''
+ HandleCommand, command did not succeed
+ Processing command: finish
+ HandleCommand, cmd_obj : 'thread step-out'
+ HandleCommand, (revised) command_string: 'thread step-out'
+ HandleCommand, wants_raw_input:'False'
+ HandleCommand, command line after removing command name(s): ''
+ HandleCommand, command did not succeed
+ Processing command: quit
+ HandleCommand, cmd_obj : 'quit'
+ HandleCommand, (revised) command_string: 'quit'
+ HandleCommand, wants_raw_input:'False'
+ HandleCommand, command line after removing command name(s): ''
+ HandleCommand, command did not succeed
