@@ -1,0 +1,2335 @@
+ Processing command: b problem03.c:11
+ HandleCommand, cmd_obj : '_regexp-break'
+ HandleCommand, (revised) command_string: '_regexp-break problem03.c:11'
+ HandleCommand, wants_raw_input:'True'
+ HandleCommand, command line after removing command name(s): 'problem03.c:11'
+ Processing command: breakpoint set --file 'problem03.c' --line 11
+ HandleCommand, cmd_obj : 'breakpoint set'
+ HandleCommand, (revised) command_string: 'breakpoint set --file 'problem03.c' --line 11'
+ HandleCommand, wants_raw_input:'False'
+ HandleCommand, command line after removing command name(s): '--file 'problem03.c' --line 11'
+ 0x14664f548 Broadcaster("lldb.target")::BroadcastEvent (event_sp = {0x137804888 Event: broadcaster = 0x14684b800 (lldb.target), type = 0x00000001 (breakpoint-changed), data = {bkpt: 1 type: breakpoint added}}, unique =0) hijack = 0x0
+ Target::AddBreakpoint (internal = no) => break_id = 1: file = 'problem03.c', line = 11, exact_match = 0
+
+
+ Added location (skipped prologue: no): 1.1: 
+  module = /Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set01/problem03
+  compile unit = problem03.c
+  function = add
+  location = /Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set01/problem03.c:11:9
+  address = problem03[0x0000000100003e8c]
+  resolved = false
+  hardware = false
+  hit count = 0   
+ 
+
+ HandleCommand, command succeeded
+ HandleCommand, command succeeded
+ Processing command: b problem03.c:15
+ HandleCommand, cmd_obj : '_regexp-break'
+ HandleCommand, (revised) command_string: '_regexp-break problem03.c:15'
+ HandleCommand, wants_raw_input:'True'
+ HandleCommand, command line after removing command name(s): 'problem03.c:15'
+ Processing command: breakpoint set --file 'problem03.c' --line 15
+ HandleCommand, cmd_obj : 'breakpoint set'
+ HandleCommand, (revised) command_string: 'breakpoint set --file 'problem03.c' --line 15'
+ HandleCommand, wants_raw_input:'False'
+ HandleCommand, command line after removing command name(s): '--file 'problem03.c' --line 15'
+ 0x14664f548 Broadcaster("lldb.target")::BroadcastEvent (event_sp = {0x137a05608 Event: broadcaster = 0x14684b800 (lldb.target), type = 0x00000001 (breakpoint-changed), data = {bkpt: 2 type: breakpoint added}}, unique =0) hijack = 0x0
+ Target::AddBreakpoint (internal = no) => break_id = 2: file = 'problem03.c', line = 15, exact_match = 0
+
+
+ Added location (skipped prologue: no): 2.1: 
+  module = /Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set01/problem03
+  compile unit = problem03.c
+  function = output
+  location = /Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set01/problem03.c:15:38
+  address = problem03[0x0000000100003ec0]
+  resolved = false
+  hardware = false
+  hit count = 0   
+ 
+
+ HandleCommand, command succeeded
+ HandleCommand, command succeeded
+ Processing command: b main
+ HandleCommand, cmd_obj : '_regexp-break'
+ HandleCommand, (revised) command_string: '_regexp-break main'
+ HandleCommand, wants_raw_input:'True'
+ HandleCommand, command line after removing command name(s): 'main'
+ Processing command: breakpoint set --name 'main'
+ HandleCommand, cmd_obj : 'breakpoint set'
+ HandleCommand, (revised) command_string: 'breakpoint set --name 'main''
+ HandleCommand, wants_raw_input:'False'
+ HandleCommand, command line after removing command name(s): '--name 'main''
+ 0x14664f548 Broadcaster("lldb.target")::BroadcastEvent (event_sp = {0x137807998 Event: broadcaster = 0x14684b800 (lldb.target), type = 0x00000001 (breakpoint-changed), data = {bkpt: 3 type: breakpoint added}}, unique =0) hijack = 0x0
+ Target::AddBreakpoint (internal = no) => break_id = 3: name = 'main'
+
+
+ Added location: 3.1: 
+  module = /Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set01/problem03
+  compile unit = problem03.c
+  function = main
+  location = /Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set01/problem03.c:19:7
+  address = problem03[0x0000000100003f18]
+  resolved = false
+  hardware = false
+  hit count = 0   
+
+
+ HandleCommand, command succeeded
+ HandleCommand, command succeeded
+ Processing command: br l
+ HandleCommand, cmd_obj : 'breakpoint list'
+ HandleCommand, (revised) command_string: 'breakpoint list'
+ HandleCommand, wants_raw_input:'False'
+ HandleCommand, command line after removing command name(s): ''
+ HandleCommand, command succeeded
+ Processing command: r
+ HandleCommand, cmd_obj : 'process launch'
+ HandleCommand, (revised) command_string: 'process launch -X true --'
+ HandleCommand, wants_raw_input:'False'
+ Repeat command: 
+ HandleCommand, command line after removing command name(s): '-X true --'
+ Target::Launch() called for /Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set01/problem03
+ Target::Launch the process instance doesn't currently exist.
+ have platform=true, platform_sp->IsHost()=true, default_to_use_pty=true
+ at least one of stdin/stdout/stderr was not set, evaluating default handling
+ target stdin='(empty)', target stdout='(empty)', stderr='(empty)'
+ Generating a pty to use for stdin/out/err
+ Target::Launch asking the platform to debug the process
+ Host::StartMonitoringChildProcess(callback, pid=1959) source = 0x126610bf0
+
+ ::waitpid (pid = 1959, &status, 0) => pid = 1959, status = 0x00000000 (EXITED), signal = 0, exit_status = 0
+ Host::StartMonitoringChildProcess(callback, pid=1960) source = 0x14665fbd0
+
+ (plugin = gdb-remote, state = attaching, restarted = 0)
+ Host::StartMonitoringChildProcess(callback, pid=1961) source = 0x1466762e0
+
+ thread created
+ Process::AttachCompletionHandler::AttachCompletionHandler process=0x13736dc00, exec_count=0
+ Process::ControlPrivateStateThread (signal = 4)
+ Sending control event of type: 4.
+ thread created
+ Process::RunPrivateStateThread (arg = 0x13736dc00, pid = 1960) thread starting...
+ timeout = <infinite>, event_sp)...
+ Process::RunPrivateStateThread (arg = 0x13736dc00, pid = 1960) got a control event: 4
+ timeout = <infinite>, event_sp)...
+ thread created
+ timeout = <infinite>
+ timeout = <infinite>, event_sp)...
+ (plugin = gdb-remote, state = stopped)
+ (plugin = gdb-remote, state = stopped, stop_id = 1
+ Process::AttachCompletionHandler::PerformAction called with state stopped (5)
+ Discarding thread plans for thread (tid = 0x5b02, force 1)
+ Thread::PushPlan(0x0x146678598): "Base thread plan.", tid = 0x5b02.
+ Process::AttachCompletionHandler::PerformAction state stopped: no more execs expected to start, continuing with attach
+ Process::CompleteAttach()
+ Setting Process code address mask to 0xffff800000000000
+ Setting Process data address mask to 0xffff800000000000
+ Target::SetArchitecture merging compatible arch; arch is now arm64 (arm64-apple-macosx14.0.0)
+ Process::CompleteAttach replacing process architecture with DidAttach() architecture: arm64e-apple-macosx-
+ DynamicLoaderDarwin::UseDYLDSPI: Use new DynamicLoader plugin
+ DynamicLoaderDarwin::UseDYLDSPI: Use new DynamicLoader plugin
+ Unloaded:
+ DynamicLoaderDarwin::UnloadAllImages[0] 9B931858-D873-3836-A0D3-79B3E7DEF212 (arm64) "/Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set01/problem03"
+ DynamicLoaderDarwin::UnloadAllImages[1] FFD8AB66-C9AB-31DF-AB80-3A3DFF367DDD (arm64e) "/usr/lib/dyld"
+ DynamicLoaderDarwin::UnloadAllImages[2] F0A54B2D-8751-35F1-A3CF-F1A02F842211 (arm64e) "/usr/lib/libSystem.B.dylib"
+ DynamicLoaderDarwin::UnloadAllImages[3] C683623C-1FF6-3133-9E28-28672FDBA4D3 (arm64e) "/usr/lib/system/libcache.dylib"
+ DynamicLoaderDarwin::UnloadAllImages[4] BFDF8F55-D3DC-3A92-B8A1-8EF165A56F1B (arm64e) "/usr/lib/system/libcommonCrypto.dylib"
+ DynamicLoaderDarwin::UnloadAllImages[5] B29A99B2-7ADE-3371-A774-B690BEC3C406 (arm64e) "/usr/lib/system/libcompiler_rt.dylib"
+ DynamicLoaderDarwin::UnloadAllImages[6] 65612C42-C5E4-3821-B71D-DDE620FB014C (arm64e) "/usr/lib/system/libcopyfile.dylib"
+ DynamicLoaderDarwin::UnloadAllImages[7] B3AC12C0-8ED6-35A2-86C6-0BFA55BFF333 (arm64e) "/usr/lib/system/libcorecrypto.dylib"
+ DynamicLoaderDarwin::UnloadAllImages[8] 8790BA20-19EC-3A36-8975-E34382D9747C (arm64e) "/usr/lib/system/libdispatch.dylib"
+ DynamicLoaderDarwin::UnloadAllImages[9] 4BB77515-DBA8-3EDF-9AF7-3C9EAE959EA6 (arm64e) "/usr/lib/system/libdyld.dylib"
+ DynamicLoaderDarwin::UnloadAllImages[10] F7CE9486-FFF5-3CB8-B26F-75811EF4283A (arm64e) "/usr/lib/system/libkeymgr.dylib"
+ DynamicLoaderDarwin::UnloadAllImages[11] 1A7038EC-EE49-35AE-8A3C-C311083795FB (arm64e) "/usr/lib/system/libmacho.dylib"
+ DynamicLoaderDarwin::UnloadAllImages[12] 3011123B-C35C-35FC-AB0B-8D775C9109D1 (arm64e) "/usr/lib/system/libquarantine.dylib"
+ DynamicLoaderDarwin::UnloadAllImages[13] CE63E895-25E4-350C-BB79-0EFD3AC899E5 (arm64e) "/usr/lib/system/libremovefile.dylib"
+ DynamicLoaderDarwin::UnloadAllImages[14] 2EA1DA8E-A94D-32EA-A64F-DD586FE72599 (arm64e) "/usr/lib/system/libsystem_asl.dylib"
+ DynamicLoaderDarwin::UnloadAllImages[15] A81CDBDB-D1B1-386E-9029-2F6E0F685E3A (arm64e) "/usr/lib/system/libsystem_blocks.dylib"
+ DynamicLoaderDarwin::UnloadAllImages[16] 1B84A7E4-8958-330C-98B8-27D491DFF69E (arm64e) "/usr/lib/system/libsystem_c.dylib"
+ DynamicLoaderDarwin::UnloadAllImages[17] FA0C6F96-A737-3F29-B640-99E313873A21 (arm64e) "/usr/lib/system/libsystem_collections.dylib"
+ DynamicLoaderDarwin::UnloadAllImages[18] 5E85DB71-174E-3E61-A3C9-36D5E0CBBF46 (arm64e) "/usr/lib/system/libsystem_configuration.dylib"
+ DynamicLoaderDarwin::UnloadAllImages[19] 8E716F51-A02E-3005-9F6F-84163BFAF1AE (arm64e) "/usr/lib/system/libsystem_containermanager.dylib"
+ DynamicLoaderDarwin::UnloadAllImages[20] 0ECFD7D1-0230-3C32-BDD7-4715D94A28E6 (arm64e) "/usr/lib/system/libsystem_coreservices.dylib"
+ DynamicLoaderDarwin::UnloadAllImages[21] 67509907-7BCE-3723-A305-0B042A41FDA5 (arm64e) "/usr/lib/system/libsystem_darwin.dylib"
+ DynamicLoaderDarwin::UnloadAllImages[22] F1E52C1A-7156-3BED-AD5B-1CE3AFFDFCE3 (arm64e) "/usr/lib/system/libsystem_darwindirectory.dylib"
+ DynamicLoaderDarwin::UnloadAllImages[23] 82426BAB-A0A9-3C99-8A86-DABB3A0BA072 (arm64e) "/usr/lib/system/libsystem_dnssd.dylib"
+ DynamicLoaderDarwin::UnloadAllImages[24] 0C18273A-0DB8-3522-853B-67A2187EEF07 (arm64e) "/usr/lib/system/libsystem_featureflags.dylib"
+ DynamicLoaderDarwin::UnloadAllImages[25] 8F2A7530-B8D3-3705-B2B7-9347D9495223 (arm64e) "/usr/lib/system/libsystem_info.dylib"
+ DynamicLoaderDarwin::UnloadAllImages[26] 72899DE6-A120-389C-90DC-B94C392EF655 (arm64e) "/usr/lib/system/libsystem_m.dylib"
+ DynamicLoaderDarwin::UnloadAllImages[27] 00379936-C90E-3D9D-A569-3F97338F1472 (arm64e) "/usr/lib/system/libsystem_malloc.dylib"
+ DynamicLoaderDarwin::UnloadAllImages[28] 9DBF57DB-0008-3584-89A3-1463AB9E4967 (arm64e) "/usr/lib/system/libsystem_networkextension.dylib"
+ DynamicLoaderDarwin::UnloadAllImages[29] 7DA7113E-E87A-3E78-AD4F-77F6EC076E42 (arm64e) "/usr/lib/system/libsystem_notify.dylib"
+ DynamicLoaderDarwin::UnloadAllImages[30] 3BC895C5-B10E-39F4-B761-E79D5719FB1D (arm64e) "/usr/lib/system/libsystem_sandbox.dylib"
+ DynamicLoaderDarwin::UnloadAllImages[31] 1C92CD80-54E6-3E70-BB3C-7264A160AD7C (arm64e) "/usr/lib/system/libsystem_secinit.dylib"
+ DynamicLoaderDarwin::UnloadAllImages[32] A7D3C07D-0A1E-3C4C-8FBA-66905E16BF99 (arm64e) "/usr/lib/system/libsystem_kernel.dylib"
+ DynamicLoaderDarwin::UnloadAllImages[33] E7E2F10A-772A-397F-BD19-A7EA5A54E49F (arm64e) "/usr/lib/system/libsystem_platform.dylib"
+ DynamicLoaderDarwin::UnloadAllImages[34] E4DEBB6E-421D-33D0-9E17-77AE0E0FE4DC (arm64e) "/usr/lib/system/libsystem_pthread.dylib"
+ DynamicLoaderDarwin::UnloadAllImages[35] 2D7D536C-1D08-304A-9E67-BFB1E99301FE (arm64e) "/usr/lib/system/libsystem_symptoms.dylib"
+ DynamicLoaderDarwin::UnloadAllImages[36] 4AF0EA7D-E9F4-30E7-914D-FB292EDB7F37 (arm64e) "/usr/lib/system/libsystem_trace.dylib"
+ DynamicLoaderDarwin::UnloadAllImages[37] FB2051CF-36B6-348F-B8DF-5B2F702F6290 (arm64e) "/usr/lib/system/libunwind.dylib"
+ DynamicLoaderDarwin::UnloadAllImages[38] 84971772-939B-3130-8908-B7A38851A516 (arm64e) "/usr/lib/system/libxpc.dylib"
+ DynamicLoaderDarwin::UnloadAllImages[39] 1C0364B5-D7E3-3170-BAA6-9C28F400E7CC (arm64e) "/usr/lib/libobjc.A.dylib"
+ DynamicLoaderDarwin::UnloadAllImages[40] 43940F08-B65E-3888-8CD3-C52398EB1CA1 (arm64e) "/usr/lib/libc++abi.dylib"
+ DynamicLoaderDarwin::UnloadAllImages[41] 5A83FBC3-0944-3D77-8DF2-03E262F67AFA (arm64e) "/usr/lib/liboah.dylib"
+ DynamicLoaderDarwin::UnloadAllImages[42] 93FBD681-FC78-33A3-AFFE-568702676142 (arm64e) "/usr/lib/libc++.1.dylib"
+ Breakpoint::ModulesChanged: num_modules: 43 load: 0 delete_locations: 0
+
+ 0x14664f548 Broadcaster("lldb.target")::BroadcastEvent (event_sp = {0x137c1eda8 Event: broadcaster = 0x14684b800 (lldb.target), type = 0x00000001 (breakpoint-changed), data = {bkpt: 1 type: locations removed}}, unique =0) hijack = 0x0
+ Breakpoint::ModulesChanged: num_modules: 43 load: 0 delete_locations: 0
+
+ 0x14664f548 Broadcaster("lldb.target")::BroadcastEvent (event_sp = {0x137c1f168 Event: broadcaster = 0x14684b800 (lldb.target), type = 0x00000001 (breakpoint-changed), data = {bkpt: 2 type: locations removed}}, unique =0) hijack = 0x0
+ Breakpoint::ModulesChanged: num_modules: 43 load: 0 delete_locations: 0
+
+ 0x14664f548 Broadcaster("lldb.target")::BroadcastEvent (event_sp = {0x137c1eda8 Event: broadcaster = 0x14684b800 (lldb.target), type = 0x00000001 (breakpoint-changed), data = {bkpt: 3 type: locations removed}}, unique =0) hijack = 0x0
+ Initial module fetch:  Adding 2 modules.
+
+ Found executable module: /Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set01/problem03
+ Found dyld module: /usr/lib/dyld
+ Adding new image at address=0x000000010000c000.
+ address=0x000000010000c000 uuid=FFD8AB66-C9AB-31DF-AB80-3A3DFF367DDD path='/usr/lib/dyld'
+ 		          __TEXT [0x000000010000c000 - 0x00000001000a0000) slide = 0x10000c000
+ 		    __DATA_CONST [0x00000001000a0000 - 0x00000001000a8000) slide = 0x10000c000
+ 		          __DATA [0x00000001000a8000 - 0x00000001000ac000) slide = 0x10000c000
+ 		    __DATA_DIRTY [0x00000001000ac000 - 0x00000001000b0000) slide = 0x10000c000
+ 		      __LINKEDIT [0x00000001000b0000 - 0x000000010010c000) slide = 0x10000c000
+ Adding new image at address=0x0000000100000000.
+ address=0x0000000100000000 uuid=9B931858-D873-3836-A0D3-79B3E7DEF212 path='/Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set01/problem03'
+ 		      __PAGEZERO [0x0000000000000000 - 0x0000000100000000)
+ 		          __TEXT [0x0000000100000000 - 0x0000000100004000)
+ 		    __DATA_CONST [0x0000000100004000 - 0x0000000100008000)
+ 		      __LINKEDIT [0x0000000100008000 - 0x000000010000c000)
+ DynamicLoaderDarwin::ModulesDidLoad[0] FFD8AB66-C9AB-31DF-AB80-3A3DFF367DDD (arm64e) "/usr/lib/dyld"
+ DynamicLoaderDarwin::ModulesDidLoad[1] 9B931858-D873-3836-A0D3-79B3E7DEF212 (arm64) "/Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set01/problem03"
+ Breakpoint::ModulesChanged: num_modules: 2 load: 1 delete_locations: 0
+
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() add at addr = 0x100003e8c
+ 0x14664f548 Broadcaster("lldb.target")::BroadcastEvent (event_sp = {0x146647308 Event: broadcaster = 0x14684b800 (lldb.target), type = 0x00000001 (breakpoint-changed), data = {bkpt: 1 type: locations resolved}}, unique =0) hijack = 0x0
+ Breakpoint::ModulesChanged: num_modules: 2 load: 1 delete_locations: 0
+
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() add at addr = 0x100003ec0
+ 0x14664f548 Broadcaster("lldb.target")::BroadcastEvent (event_sp = {0x137c1f0e8 Event: broadcaster = 0x14684b800 (lldb.target), type = 0x00000001 (breakpoint-changed), data = {bkpt: 2 type: locations resolved}}, unique =0) hijack = 0x0
+ Breakpoint::ModulesChanged: num_modules: 2 load: 1 delete_locations: 0
+
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() add at addr = 0x100003f18
+ 0x14664f548 Broadcaster("lldb.target")::BroadcastEvent (event_sp = {0x137c1f0e8 Event: broadcaster = 0x14684b800 (lldb.target), type = 0x00000001 (breakpoint-changed), data = {bkpt: 3 type: locations resolved}}, unique =0) hijack = 0x0
+ Target::AddBreakpoint (internal = yes) => break_id = -1: name = '_dyld_debugger_notification', language = c, module = dyld
+
+
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() add at addr = 0x10000de20
+ after DynamicLoader::DidAttach(), target executable is /Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set01/problem03 (using macos-dyld plugin)
+ after SystemRuntime::DidAttach(), target executable is /Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set01/problem03 (using systemruntime-macosx plugin)
+ Ran next event action, result was 0.
+ 0x146678598: tid = 0x5b02: stop info = <NULL> (stop_id = 1)
+ 0x146678598: tid = 0x5b02: stop info = signal SIGSTOP (stop_id = 1)
+ 
+ ThreadList::ShouldStop: 1 threads, 1 unsuspended threads
+ Thread::ShouldStop(0x146678598) for tid = 0x5b02 0x5b02, pc = 0x0000000100010b70
+ ^^^^^^^^ Thread::ShouldStop Begin ^^^^^^^^
+ Plan stack initial state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+
+ Base plan discarding thread plans for thread tid = 0x5b02 (signal: signal SIGSTOP)
+ Discarding thread plans for thread (tid = 0x5b02, force 0)
+ Base plan says should stop: 1.
+ Plan stack final state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+
+ vvvvvvvv Thread::ShouldStop End (returning 1) vvvvvvvv
+ ThreadList::ShouldStop overall should_stop = 1
+ Process::ShouldBroadcastEvent (0x146678c40) => new state: stopped, last broadcast state: stopped - YES
+ Process::HandlePrivateEvent (pid = 1960) broadcasting new state stopped (old state stopped) to hijacked
+ timeout = <infinite>, event_sp)...
+ (plugin = gdb-remote, state = stopped, restarted = 0)
+ (plugin = gdb-remote, state = stopped) -- unlocking run lock
+ timeout = <infinite>, event_sp) => stopped
+ (plugin = gdb-remote) -- locking run lock
+ Process::PrivateResume() m_stop_id = 1, public state: stopped private state: stopped
+ WillResume Thread #1 (0x0x146678598): tid = 0x5b02, pc = 0x100010b70, sp = 0x16fdfefb0, fp = 0x00000000, plan = 'base plan', state = running, stop others = 0
+ (plugin = gdb-remote, state = running)
+ Process thinks the process has resumed.
+ Current Plan for thread 1(0x146678598) (0x5b02, running): base plan being asked whether we should report run.
+ Process::ShouldBroadcastEvent (0x146646d90) => new state: running, last broadcast state: running - YES
+ Process::HandlePrivateEvent (pid = 1960) broadcasting new state running (old state running) to public
+ Process::PushProcessIOHandler pushing IO handler
+ Process::HandlePrivateEvent updated m_iohandler_sync to 1
+ timeout = <infinite>, event_sp)...
+ waited from m_iohandler_sync to change from 0. New value is 1.
+ (plugin = gdb-remote, state = running, restarted = 0)
+ HandleCommand, command succeeded
+ (plugin = gdb-remote, state = stopped)
+ (plugin = gdb-remote, state = stopped, stop_id = 2
+ 0x146678598: tid = 0x5b02: stop info = <NULL> (stop_id = 2)
+ 0x146678598: tid = 0x5b02: stop info = shared-library-event (stop_id = 2)
+ 
+ ThreadList::ShouldStop: 1 threads, 1 unsuspended threads
+ Thread::ShouldStop(0x146678598) for tid = 0x5b02 0x5b02, pc = 0x000000010000de20
+ ^^^^^^^^ Thread::ShouldStop Begin ^^^^^^^^
+ Plan stack initial state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+
+ Target::RemoveBreakpointByID (break_id = -1, internal = yes)
+
+ Target::DisableBreakpointByID (break_id = -1, internal = yes)
+
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() remove at addr = 0x10000de20
+ Unloaded:
+ DynamicLoaderDarwin::UnloadAllImages[0] 9B931858-D873-3836-A0D3-79B3E7DEF212 (arm64) "/Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set01/problem03"
+ Breakpoint::ModulesChanged: num_modules: 1 load: 0 delete_locations: 0
+
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() remove at addr = 0x100003e8c
+ 0x14664f548 Broadcaster("lldb.target")::BroadcastEvent (event_sp = {0x146678e78 Event: broadcaster = 0x14684b800 (lldb.target), type = 0x00000001 (breakpoint-changed), data = {bkpt: 1 type: locations removed}}, unique =0) hijack = 0x0
+ Breakpoint::ModulesChanged: num_modules: 1 load: 0 delete_locations: 0
+
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() remove at addr = 0x100003ec0
+ 0x14664f548 Broadcaster("lldb.target")::BroadcastEvent (event_sp = {0x146678e78 Event: broadcaster = 0x14684b800 (lldb.target), type = 0x00000001 (breakpoint-changed), data = {bkpt: 2 type: locations removed}}, unique =0) hijack = 0x0
+ Breakpoint::ModulesChanged: num_modules: 1 load: 0 delete_locations: 0
+
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() remove at addr = 0x100003f18
+ 0x14664f548 Broadcaster("lldb.target")::BroadcastEvent (event_sp = {0x146678e78 Event: broadcaster = 0x14684b800 (lldb.target), type = 0x00000001 (breakpoint-changed), data = {bkpt: 3 type: locations removed}}, unique =0) hijack = 0x0
+ Target::AddBreakpoint (internal = yes) => break_id = -2: address = 0x000000018ff71a0c
+
+
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() add at addr = 0x18ff71a0c
+ Hit breakpoint location: -1.1: 
+  module = /usr/lib/dyld
+  symbol = _dyld_debugger_notification
+  address = dyld[0x00000001800b8e20]
+  resolved = false
+  hardware = false
+  hit count = 1   
+, continuing.
+
+ StopInfo::ShouldStop async callback says we should not stop, returning ShouldStop of false.
+ ThreadList::ShouldStop overall should_stop = 0
+ ThreadList::ShouldReportStop 1 threads
+ Thread::ShouldReportStop() tid = 0x5b02: returning vote 0 for current plan
+ Returning no opinion
+ Process::ShouldBroadcastEvent: should_resume: 1 state: stopped was_restarted: 0 report_stop_vote: 0.
+ Process::ShouldBroadcastEvent (0x146646d90) Restarting process from state: stopped
+ Process::PrivateResume() m_stop_id = 2, public state: running private state: stopped
+ WillResume Thread #1 (0x0x146678598): tid = 0x5b02, pc = 0x10000de20, sp = 0x16fdfec60, fp = 0x16fdfed10, plan = 'base plan', state = running, stop others = 0
+ (plugin = gdb-remote, state = running)
+ Process thinks the process has resumed.
+ Process::ShouldBroadcastEvent (0x146646d90) => new state: stopped, last broadcast state: running - NO
+ Process::HandlePrivateEvent (pid = 1960) suppressing state stopped (old state running): should_broadcast == false
+ timeout = <infinite>, event_sp)...
+ Process::ShouldBroadcastEvent (0x1466450a0) => new state: running, last broadcast state: running - NO
+ Process::HandlePrivateEvent (pid = 1960) suppressing state running (old state running): should_broadcast == false
+ timeout = <infinite>, event_sp)...
+ (plugin = gdb-remote, state = stopped)
+ (plugin = gdb-remote, state = stopped, stop_id = 3
+ 0x146678598: tid = 0x5b02: stop info = <NULL> (stop_id = 3)
+ 0x146678598: tid = 0x5b02: stop info =  (stop_id = 3)
+ 
+ ThreadList::ShouldStop: 1 threads, 1 unsuspended threads
+ Thread::ShouldStop(0x146678598) for tid = 0x5b02 0x5b02, pc = 0x000000018ff71a0c
+ ^^^^^^^^ Thread::ShouldStop Begin ^^^^^^^^
+ Plan stack initial state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+
+ Target::RemoveBreakpointByID (break_id = -2, internal = yes)
+
+ Target::DisableBreakpointByID (break_id = -2, internal = yes)
+
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() remove at addr = 0x18ff71a0c
+ Initial module fetch:  Adding 2 modules.
+
+ Found executable module: /Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set01/problem03
+ Found dyld module: /usr/lib/dyld
+ Adding new image at address=0x000000018ff27000.
+ address=0x000000018ff27000 uuid=FFD8AB66-C9AB-31DF-AB80-3A3DFF367DDD path='/usr/lib/dyld'
+ 		          __TEXT [0x000000018ff27000 - 0x000000018ffba874) slide = 0xfe70000
+ 		    __DATA_CONST [0x00000001eb3edbd0 - 0x00000001eb3f3380) slide = 0xfe70000
+ 		          __DATA [0x00000001e7a2de80 - 0x00000001e7a30a4c) slide = 0xfe70000
+ 		    __DATA_DIRTY [0x00000001e756d0c0 - 0x00000001e756ec20) slide = 0xfe70000
+ 		      __LINKEDIT [0x0000000247aa0000 - 0x000000027f110000) slide = 0xfe70000
+ Adding new image at address=0x0000000100000000.
+ address=0x0000000100000000 uuid=9B931858-D873-3836-A0D3-79B3E7DEF212 path='/Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set01/problem03'
+ 		      __PAGEZERO [0x0000000000000000 - 0x0000000100000000)
+ 		          __TEXT [0x0000000100000000 - 0x0000000100004000)
+ 		    __DATA_CONST [0x0000000100004000 - 0x0000000100008000)
+ 		      __LINKEDIT [0x0000000100008000 - 0x000000010000c000)
+ DynamicLoaderDarwin::ModulesDidLoad[0] FFD8AB66-C9AB-31DF-AB80-3A3DFF367DDD (arm64e) "/usr/lib/dyld"
+ DynamicLoaderDarwin::ModulesDidLoad[1] 9B931858-D873-3836-A0D3-79B3E7DEF212 (arm64) "/Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set01/problem03"
+ Breakpoint::ModulesChanged: num_modules: 2 load: 1 delete_locations: 0
+
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() add at addr = 0x100003e8c
+ 0x14664f548 Broadcaster("lldb.target")::BroadcastEvent (event_sp = {0x146683878 Event: broadcaster = 0x14684b800 (lldb.target), type = 0x00000001 (breakpoint-changed), data = {bkpt: 1 type: locations resolved}}, unique =0) hijack = 0x0
+ Breakpoint::ModulesChanged: num_modules: 2 load: 1 delete_locations: 0
+
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() add at addr = 0x100003ec0
+ 0x14664f548 Broadcaster("lldb.target")::BroadcastEvent (event_sp = {0x137c28848 Event: broadcaster = 0x14684b800 (lldb.target), type = 0x00000001 (breakpoint-changed), data = {bkpt: 2 type: locations resolved}}, unique =0) hijack = 0x0
+ Breakpoint::ModulesChanged: num_modules: 2 load: 1 delete_locations: 0
+
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() add at addr = 0x100003f18
+ 0x14664f548 Broadcaster("lldb.target")::BroadcastEvent (event_sp = {0x137c28848 Event: broadcaster = 0x14684b800 (lldb.target), type = 0x00000001 (breakpoint-changed), data = {bkpt: 3 type: locations resolved}}, unique =0) hijack = 0x0
+ Target::AddBreakpoint (internal = yes) => break_id = -3: name = '_dyld_debugger_notification', language = c, module = dyld
+
+
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() add at addr = 0x18ff28e20
+ Hit breakpoint location: -2.1: 
+  address = 0x000000018ff71a0c
+  resolved = false
+  hardware = false
+  hit count = 1   
+, continuing.
+
+ StopInfo::ShouldStop async callback says we should not stop, returning ShouldStop of false.
+ ThreadList::ShouldStop overall should_stop = 0
+ ThreadList::ShouldReportStop 1 threads
+ Thread::ShouldReportStop() tid = 0x5b02: returning vote 0 for current plan
+ Returning no opinion
+ Process::ShouldBroadcastEvent: should_resume: 1 state: stopped was_restarted: 0 report_stop_vote: 0.
+ Process::ShouldBroadcastEvent (0x1466450a0) Restarting process from state: stopped
+ Process::PrivateResume() m_stop_id = 3, public state: running private state: stopped
+ WillResume Thread #1 (0x0x146678598): tid = 0x5b02, pc = 0x18ff71a0c, sp = 0x16fdfec10, fp = 0x16fdfed70, plan = 'base plan', state = running, stop others = 0
+ (plugin = gdb-remote, state = running)
+ Process thinks the process has resumed.
+ Process::ShouldBroadcastEvent (0x1466450a0) => new state: stopped, last broadcast state: running - NO
+ Process::HandlePrivateEvent (pid = 1960) suppressing state stopped (old state running): should_broadcast == false
+ timeout = <infinite>, event_sp)...
+ Process::ShouldBroadcastEvent (0x146650830) => new state: running, last broadcast state: running - NO
+ Process::HandlePrivateEvent (pid = 1960) suppressing state running (old state running): should_broadcast == false
+ timeout = <infinite>, event_sp)...
+ (plugin = gdb-remote, state = stopped)
+ (plugin = gdb-remote, state = stopped, stop_id = 4
+ 0x146678598: tid = 0x5b02: stop info = <NULL> (stop_id = 4)
+ 0x146678598: tid = 0x5b02: stop info = shared-library-event (stop_id = 4)
+ 
+ ThreadList::ShouldStop: 1 threads, 1 unsuspended threads
+ Thread::ShouldStop(0x146678598) for tid = 0x5b02 0x5b02, pc = 0x000000018ff28e20
+ ^^^^^^^^ Thread::ShouldStop Begin ^^^^^^^^
+ Plan stack initial state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+
+ Adding 1 modules.
+ Adding new image at address=0x0000000100000000.
+ address=0x0000000100000000 uuid=9B931858-D873-3836-A0D3-79B3E7DEF212 path='/Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set01/problem03'
+ 		      __PAGEZERO [0x0000000000000000 - 0x0000000100000000)
+ 		          __TEXT [0x0000000100000000 - 0x0000000100004000)
+ 		    __DATA_CONST [0x0000000100004000 - 0x0000000100008000)
+ 		      __LINKEDIT [0x0000000100008000 - 0x000000010000c000)
+ Hit breakpoint location: -3.1: 
+  module = /usr/lib/dyld
+  symbol = _dyld_debugger_notification
+  address = 0x000000018ff28e20
+  resolved = true
+  hardware = false
+  hit count = 1   
+, continuing.
+
+ StopInfo::ShouldStop async callback says we should not stop, returning ShouldStop of false.
+ ThreadList::ShouldStop overall should_stop = 0
+ ThreadList::ShouldReportStop 1 threads
+ Thread::ShouldReportStop() tid = 0x5b02: returning vote 0 for current plan
+ Returning no opinion
+ Process::ShouldBroadcastEvent: should_resume: 1 state: stopped was_restarted: 0 report_stop_vote: 0.
+ Process::ShouldBroadcastEvent (0x146650830) Restarting process from state: stopped
+ Process::PrivateResume() m_stop_id = 4, public state: running private state: stopped
+ Thread::PushPlan(0x0x146678598): "Single stepping past breakpoint site 9 at 0x18ff28e20", tid = 0x5b02.
+ WillResume Thread #1 (0x0x146678598): tid = 0x5b02, pc = 0x18ff28e20, sp = 0x16fdfeb50, fp = 0x16fdfec00, plan = 'Step over breakpoint trap', state = stepping, stop others = 1
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() remove at addr = 0x18ff28e20
+ (plugin = gdb-remote, state = running)
+ Process thinks the process has resumed.
+ Process::ShouldBroadcastEvent (0x146650830) => new state: stopped, last broadcast state: running - NO
+ Process::HandlePrivateEvent (pid = 1960) suppressing state stopped (old state running): should_broadcast == false
+ timeout = <infinite>, event_sp)...
+ Process::ShouldBroadcastEvent (0x137c14f50) => new state: running, last broadcast state: running - NO
+ Process::HandlePrivateEvent (pid = 1960) suppressing state running (old state running): should_broadcast == false
+ timeout = <infinite>, event_sp)...
+ (plugin = gdb-remote, state = stopped)
+ (plugin = gdb-remote, state = stopped, stop_id = 5
+ 0x146678598: tid = 0x5b02: stop info = <NULL> (stop_id = 5)
+ 0x146678598: tid = 0x5b02: stop info = trace (stop_id = 5)
+ 
+ ThreadList::ShouldStop: 1 threads, 1 unsuspended threads
+ Thread::ShouldStop(0x146678598) for tid = 0x5b02 0x5b02, pc = 0x000000018ff71ac8
+ ^^^^^^^^ Thread::ShouldStop Begin ^^^^^^^^
+ Plan stack initial state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+      Element 1: Single stepping past breakpoint site 9 at 0x18ff28e20
+
+ Step over breakpoint stopped for reason: trace.
+ Plan Step over breakpoint trap should stop: 0.
+ Completed step over breakpoint plan.
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() add at addr = 0x18ff28e20
+ Plan Step over breakpoint trap auto-continue: true.
+ Popping plan: "Step over breakpoint trap", tid = 0x5b02.
+ Plan stack final state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+    Completed plan stack:
+      Element 0: Single stepping past breakpoint site 9 at 0x18ff28e20
+
+ vvvvvvvv Thread::ShouldStop End (returning 0) vvvvvvvv
+ ThreadList::ShouldStop overall should_stop = 0
+ ThreadList::ShouldReportStop 1 threads
+ Thread::ShouldReportStop() tid = 0x5b02: returning vote for complete stack's back plan
+ Returning vote: no
+ Returning no
+ Process::ShouldBroadcastEvent: should_resume: 1 state: stopped was_restarted: 0 report_stop_vote: -1.
+ Process::ShouldBroadcastEvent (0x137904a00) Restarting process from state: stopped
+ Process::PrivateResume() m_stop_id = 5, public state: running private state: stopped
+ WillResume Thread #1 (0x0x146678598): tid = 0x5b02, pc = 0x18ff71ac8, sp = 0x16fdfeb50, fp = 0x16fdfec00, plan = 'base plan', state = running, stop others = 0
+ (plugin = gdb-remote, state = running)
+ Process thinks the process has resumed.
+ Process::ShouldBroadcastEvent (0x137904a00) => new state: stopped, last broadcast state: running - NO
+ Process::HandlePrivateEvent (pid = 1960) suppressing state stopped (old state running): should_broadcast == false
+ timeout = <infinite>, event_sp)...
+ Process::ShouldBroadcastEvent (0x1466a6fe0) => new state: running, last broadcast state: running - NO
+ Process::HandlePrivateEvent (pid = 1960) suppressing state running (old state running): should_broadcast == false
+ timeout = <infinite>, event_sp)...
+ (plugin = gdb-remote, state = stopped)
+ (plugin = gdb-remote, state = stopped, stop_id = 6
+ 0x146678598: tid = 0x5b02: stop info = <NULL> (stop_id = 6)
+ 0x146678598: tid = 0x5b02: stop info = shared-library-event (stop_id = 6)
+ 
+ ThreadList::ShouldStop: 1 threads, 1 unsuspended threads
+ Thread::ShouldStop(0x146678598) for tid = 0x5b02 0x5b02, pc = 0x000000018ff28e20
+ ^^^^^^^^ Thread::ShouldStop Begin ^^^^^^^^
+ Plan stack initial state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+
+ Adding 41 modules.
+ Adding new image at address=0x000000019cac9000.
+ address=0x000000019cac9000 uuid=F0A54B2D-8751-35F1-A3CF-F1A02F842211 path='/usr/lib/libSystem.B.dylib'
+ 		          __TEXT [0x000000019cac9000 - 0x000000019cacb000) slide = 0xfe70000
+ 		    __DATA_CONST [0x00000001e4329b98 - 0x00000001e4329ba8) slide = 0xfe70000
+ 		    __AUTH_CONST [0x00000001ec32d5a8 - 0x00000001ec32d878) slide = 0xfe70000
+ 		          __AUTH [0x00000001e7bb4650 - 0x00000001e7bb4658) slide = 0xfe70000
+ 		          __DATA [0x00000001e65b6d60 - 0x00000001e65b6d68) slide = 0xfe70000
+ 		      __LINKEDIT [0x0000000247aa0000 - 0x000000027f110000) slide = 0xfe70000
+ Adding new image at address=0x000000019cac3000.
+ address=0x000000019cac3000 uuid=C683623C-1FF6-3133-9E28-28672FDBA4D3 path='/usr/lib/system/libcache.dylib'
+ 		          __TEXT [0x000000019cac3000 - 0x000000019cac9000) slide = 0xfe70000
+ 		    __DATA_CONST [0x00000001e4329af0 - 0x00000001e4329b98) slide = 0xfe70000
+ 		    __AUTH_CONST [0x00000001ec32d4d0 - 0x00000001ec32d5a8) slide = 0xfe70000
+ 		      __LINKEDIT [0x0000000247aa0000 - 0x000000027f110000) slide = 0xfe70000
+ Adding new image at address=0x000000019ca7f000.
+ address=0x000000019ca7f000 uuid=BFDF8F55-D3DC-3A92-B8A1-8EF165A56F1B path='/usr/lib/system/libcommonCrypto.dylib'
+ 		          __TEXT [0x000000019ca7f000 - 0x000000019ca8cff8) slide = 0xfe70000
+ 		    __DATA_CONST [0x00000001e4328b08 - 0x00000001e43292a8) slide = 0xfe70000
+ 		    __AUTH_CONST [0x00000001ec32b558 - 0x00000001ec32c388) slide = 0xfe70000
+ 		          __AUTH [0x00000001e7bb4630 - 0x00000001e7bb4650) slide = 0xfe70000
+ 		      __LINKEDIT [0x0000000247aa0000 - 0x000000027f110000) slide = 0xfe70000
+ Adding new image at address=0x000000019caaa000.
+ address=0x000000019caaa000 uuid=B29A99B2-7ADE-3371-A774-B690BEC3C406 path='/usr/lib/system/libcompiler_rt.dylib'
+ 		          __TEXT [0x000000019caaa000 - 0x000000019caae000) slide = 0xfe70000
+ 		    __AUTH_CONST [0x00000001ec32cc60 - 0x00000001ec32ccc0) slide = 0xfe70000
+ 		          __DATA [0x00000001e65b5cf0 - 0x00000001e65b6cf0) slide = 0xfe70000
+ 		      __LINKEDIT [0x0000000247aa0000 - 0x000000027f110000) slide = 0xfe70000
+ Adding new image at address=0x000000019caa0000.
+ address=0x000000019caa0000 uuid=65612C42-C5E4-3821-B71D-DDE620FB014C path='/usr/lib/system/libcopyfile.dylib'
+ 		          __TEXT [0x000000019caa0000 - 0x000000019caa9ff4) slide = 0xfe70000
+ 		    __DATA_CONST [0x00000001e4329600 - 0x00000001e43299e0) slide = 0xfe70000
+ 		    __AUTH_CONST [0x00000001ec32c800 - 0x00000001ec32cc60) slide = 0xfe70000
+ 		          __DATA [0x00000001e65b5ce0 - 0x00000001e65b5cf0) slide = 0xfe70000
+ 		      __LINKEDIT [0x0000000247aa0000 - 0x000000027f110000) slide = 0xfe70000
+ Adding new image at address=0x0000000190022000.
+ address=0x0000000190022000 uuid=B3AC12C0-8ED6-35A2-86C6-0BFA55BFF333 path='/usr/lib/system/libcorecrypto.dylib'
+ 		          __TEXT [0x0000000190022000 - 0x00000001900befc8) slide = 0xfe70000
+ 		    __DATA_CONST [0x00000001e4278000 - 0x00000001e4278f10) slide = 0xfe70000
+ 		    __AUTH_CONST [0x00000001eb3fb680 - 0x00000001eb3fd188) slide = 0xfe70000
+ 		          __AUTH [0x00000001e7a30c08 - 0x00000001e7a30cc8) slide = 0xfe70000
+ 		          __DATA [0x00000001e63f4590 - 0x00000001e63fc8f0) slide = 0xfe70000
+ 		    __DATA_DIRTY [0x00000001e756fdc8 - 0x00000001e756fea0) slide = 0xfe70000
+ 		      __LINKEDIT [0x0000000247aa0000 - 0x000000027f110000) slide = 0xfe70000
+ Adding new image at address=0x00000001900f6000.
+ address=0x00000001900f6000 uuid=8790BA20-19EC-3A36-8975-E34382D9747C path='/usr/lib/system/libdispatch.dylib'
+ 		          __TEXT [0x00000001900f6000 - 0x000000019013d000) slide = 0xfe70000
+ 		    __DATA_CONST [0x00000001eb3fda40 - 0x00000001eb411d70) slide = 0xfe70000
+ 		          __DATA [0x00000001e7a3c000 - 0x00000001e7a3d3a0) slide = 0xfe70000
+ 		    __DATA_DIRTY [0x00000001e75700c0 - 0x00000001e7573ae8) slide = 0xfe70000
+ 		      __LINKEDIT [0x0000000247aa0000 - 0x000000027f110000) slide = 0xfe70000
+ Adding new image at address=0x00000001902ad000.
+ address=0x00000001902ad000 uuid=4BB77515-DBA8-3EDF-9AF7-3C9EAE959EA6 path='/usr/lib/system/libdyld.dylib'
+ 		          __TEXT [0x00000001902ad000 - 0x00000001902d2000) slide = 0xfe70000
+ 		    __DATA_CONST [0x00000001e427daa8 - 0x00000001e427dee8) slide = 0xfe70000
+ 		    __AUTH_CONST [0x00000001eb418230 - 0x00000001eb418e08) slide = 0xfe70000
+ 		          __AUTH [0x00000001e7a405d0 - 0x00000001e7a40620) slide = 0xfe70000
+ 		          __DATA [0x00000001e6418048 - 0x00000001e64180b8) slide = 0xfe70000
+ 		    __DATA_DIRTY [0x00000001e7581838 - 0x00000001e7581858) slide = 0xfe70000
+ 		  __SHARED_CACHE [0x00000001e64180b8 - 0x00000001e64180b8) slide = 0xfe70000
+ 		      __LINKEDIT [0x0000000247aa0000 - 0x000000027f110000) slide = 0xfe70000
+ Adding new image at address=0x000000019cab9000.
+ address=0x000000019cab9000 uuid=F7CE9486-FFF5-3CB8-B26F-75811EF4283A path='/usr/lib/system/libkeymgr.dylib'
+ 		          __TEXT [0x000000019cab9000 - 0x000000019cab9ffc) slide = 0xfe70000
+ 		    __DATA_CONST [0x00000001e4329a68 - 0x00000001e4329a78) slide = 0xfe70000
+ 		    __AUTH_CONST [0x00000001ec32d268 - 0x00000001ec32d2e8) slide = 0xfe70000
+ 		      __LINKEDIT [0x0000000247aa0000 - 0x000000027f110000) slide = 0xfe70000
+ Adding new image at address=0x000000019ca57000.
+ address=0x000000019ca57000 uuid=1A7038EC-EE49-35AE-8A3C-C311083795FB path='/usr/lib/system/libmacho.dylib'
+ 		          __TEXT [0x000000019ca57000 - 0x000000019ca5effc) slide = 0xfe70000
+ 		    __DATA_CONST [0x00000001e4328388 - 0x00000001e4328ad0) slide = 0xfe70000
+ 		    __AUTH_CONST [0x00000001ec32b3d0 - 0x00000001ec32b440) slide = 0xfe70000
+ 		      __LINKEDIT [0x0000000247aa0000 - 0x000000027f110000) slide = 0xfe70000
+ Adding new image at address=0x000000019bff7000.
+ address=0x000000019bff7000 uuid=3011123B-C35C-35FC-AB0B-8D775C9109D1 path='/usr/lib/system/libquarantine.dylib'
+ 		          __TEXT [0x000000019bff7000 - 0x000000019bff9ffc) slide = 0xfe70000
+ 		    __DATA_CONST [0x00000001e43239d8 - 0x00000001e4323a28) slide = 0xfe70000
+ 		    __AUTH_CONST [0x00000001ec1b4da8 - 0x00000001ec1b4eb8) slide = 0xfe70000
+ 		          __DATA [0x00000001e65a2810 - 0x00000001e65a2820) slide = 0xfe70000
+ 		      __LINKEDIT [0x0000000247aa0000 - 0x000000027f110000) slide = 0xfe70000
+ Adding new image at address=0x000000019cab6000.
+ address=0x000000019cab6000 uuid=CE63E895-25E4-350C-BB79-0EFD3AC899E5 path='/usr/lib/system/libremovefile.dylib'
+ 		          __TEXT [0x000000019cab6000 - 0x000000019cab8ffc) slide = 0xfe70000
+ 		    __DATA_CONST [0x00000001e4329a58 - 0x00000001e4329a68) slide = 0xfe70000
+ 		    __AUTH_CONST [0x00000001ec32d0e8 - 0x00000001ec32d268) slide = 0xfe70000
+ 		      __LINKEDIT [0x0000000247aa0000 - 0x000000027f110000) slide = 0xfe70000
+ Adding new image at address=0x000000019596a000.
+ address=0x000000019596a000 uuid=2EA1DA8E-A94D-32EA-A64F-DD586FE72599 path='/usr/lib/system/libsystem_asl.dylib'
+ 		          __TEXT [0x000000019596a000 - 0x0000000195982000) slide = 0xfe70000
+ 		    __DATA_CONST [0x00000001e42a18c0 - 0x00000001e42a1ee0) slide = 0xfe70000
+ 		    __AUTH_CONST [0x00000001ebb08800 - 0x00000001ebb09248) slide = 0xfe70000
+ 		          __DATA [0x00000001e64e5460 - 0x00000001e64e5570) slide = 0xfe70000
+ 		    __DATA_DIRTY [0x00000001e75cfd80 - 0x00000001e75cfedc) slide = 0xfe70000
+ 		      __LINKEDIT [0x0000000247aa0000 - 0x000000027f110000) slide = 0xfe70000
+ Adding new image at address=0x000000018ffbb000.
+ address=0x000000018ffbb000 uuid=A81CDBDB-D1B1-386E-9029-2F6E0F685E3A path='/usr/lib/system/libsystem_blocks.dylib'
+ 		          __TEXT [0x000000018ffbb000 - 0x000000018ffbfff9) slide = 0xfe70000
+ 		    __DATA_CONST [0x00000001eb3f3380 - 0x00000001eb3f36f0) slide = 0xfe70000
+ 		    __AUTH_CONST [0x00000001eb3f36f0 - 0x00000001eb3f38c0) slide = 0xfe70000
+ 		          __DATA [0x00000001e63f35e0 - 0x00000001e63f35f8) slide = 0xfe70000
+ 		    __DATA_DIRTY [0x00000001e756ec20 - 0x00000001e756ee18) slide = 0xfe70000
+ 		      __LINKEDIT [0x0000000247aa0000 - 0x000000027f110000) slide = 0xfe70000
+ Adding new image at address=0x0000000190140000.
+ address=0x0000000190140000 uuid=1B84A7E4-8958-330C-98B8-27D491DFF69E path='/usr/lib/system/libsystem_c.dylib'
+ 		          __TEXT [0x0000000190140000 - 0x00000001901beff4) slide = 0xfe70000
+ 		    __DATA_CONST [0x00000001e4279140 - 0x00000001e427a9c8) slide = 0xfe70000
+ 		    __AUTH_CONST [0x00000001eb411ef0 - 0x00000001eb412848) slide = 0xfe70000
+ 		          __AUTH [0x00000001e7a3d3a0 - 0x00000001e7a3e0c0) slide = 0xfe70000
+ 		          __DATA [0x00000001e63fec30 - 0x00000001e6400db0) slide = 0xfe70000
+ 		    __DATA_DIRTY [0x00000001e7573af8 - 0x00000001e7576680) slide = 0xfe70000
+ 		      __LINKEDIT [0x0000000247aa0000 - 0x000000027f110000) slide = 0xfe70000
+ Adding new image at address=0x000000019caae000.
+ address=0x000000019caae000 uuid=FA0C6F96-A737-3F29-B640-99E313873A21 path='/usr/lib/system/libsystem_collections.dylib'
+ 		          __TEXT [0x000000019caae000 - 0x000000019cab2ffc) slide = 0xfe70000
+ 		    __DATA_CONST [0x00000001e43299e0 - 0x00000001e43299e8) slide = 0xfe70000
+ 		    __AUTH_CONST [0x00000001ec32ccc0 - 0x00000001ec32ce10) slide = 0xfe70000
+ 		      __LINKEDIT [0x0000000247aa0000 - 0x000000027f110000) slide = 0xfe70000
+ Adding new image at address=0x000000019b2d9000.
+ address=0x000000019b2d9000 uuid=5E85DB71-174E-3E61-A3C9-36D5E0CBBF46 path='/usr/lib/system/libsystem_configuration.dylib'
+ 		          __TEXT [0x000000019b2d9000 - 0x000000019b2de000) slide = 0xfe70000
+ 		    __DATA_CONST [0x00000001e43202c8 - 0x00000001e43204a0) slide = 0xfe70000
+ 		    __AUTH_CONST [0x00000001ec13b400 - 0x00000001ec13b728) slide = 0xfe70000
+ 		          __DATA [0x00000001e658d520 - 0x00000001e658d5e1) slide = 0xfe70000
+ 		      __LINKEDIT [0x0000000247aa0000 - 0x000000027f110000) slide = 0xfe70000
+ Adding new image at address=0x000000019a369000.
+ address=0x000000019a369000 uuid=8E716F51-A02E-3005-9F6F-84163BFAF1AE path='/usr/lib/system/libsystem_containermanager.dylib'
+ 		          __TEXT [0x000000019a369000 - 0x000000019a392ffc) slide = 0xfe70000
+ 		    __DATA_CONST [0x00000001e42f9358 - 0x00000001e42f9ef0) slide = 0xfe70000
+ 		    __AUTH_CONST [0x00000001ebf8c6a0 - 0x00000001ebf8df68) slide = 0xfe70000
+ 		          __AUTH [0x00000001e7b8fd28 - 0x00000001e7b8fe90) slide = 0xfe70000
+ 		          __DATA [0x00000001e6562b10 - 0x00000001e6562e88) slide = 0xfe70000
+ 		      __LINKEDIT [0x0000000247aa0000 - 0x000000027f110000) slide = 0xfe70000
+ Adding new image at address=0x000000019c6fc000.
+ address=0x000000019c6fc000 uuid=0ECFD7D1-0230-3C32-BDD7-4715D94A28E6 path='/usr/lib/system/libsystem_coreservices.dylib'
+ 		          __TEXT [0x000000019c6fc000 - 0x000000019c701ffc) slide = 0xfe70000
+ 		    __DATA_CONST [0x00000001e43261c8 - 0x00000001e4326a68) slide = 0xfe70000
+ 		    __AUTH_CONST [0x00000001ec2db000 - 0x00000001ec2db2e8) slide = 0xfe70000
+ 		          __DATA [0x00000001e65ab960 - 0x00000001e65aba08) slide = 0xfe70000
+ 		      __LINKEDIT [0x0000000247aa0000 - 0x000000027f110000) slide = 0xfe70000
+ Adding new image at address=0x0000000193649000.
+ address=0x0000000193649000 uuid=67509907-7BCE-3723-A305-0B042A41FDA5 path='/usr/lib/system/libsystem_darwin.dylib'
+ 		          __TEXT [0x0000000193649000 - 0x0000000193653ff8) slide = 0xfe70000
+ 		    __DATA_CONST [0x00000001e4291958 - 0x00000001e42942d8) slide = 0xfe70000
+ 		    __AUTH_CONST [0x00000001eb97d260 - 0x00000001eb97d6a8) slide = 0xfe70000
+ 		          __DATA [0x00000001e64bef50 - 0x00000001e64bef60) slide = 0xfe70000
+ 		    __DATA_DIRTY [0x00000001e7598098 - 0x00000001e75980c8) slide = 0xfe70000
+ 		      __LINKEDIT [0x0000000247aa0000 - 0x000000027f110000) slide = 0xfe70000
+ Adding new image at address=0x000000022f667000.
+ address=0x000000022f667000 uuid=F1E52C1A-7156-3BED-AD5B-1CE3AFFDFCE3 path='/usr/lib/system/libsystem_darwindirectory.dylib'
+ 		          __TEXT [0x000000022f667000 - 0x000000022f66b000) slide = 0xfe70000
+ 		    __DATA_CONST [0x000000023bef8e28 - 0x000000023bef8fb0) slide = 0xfe70000
+ 		    __AUTH_CONST [0x00000002454b9a50 - 0x00000002454b9d90) slide = 0xfe70000
+ 		          __DATA [0x000000023f1fd378 - 0x000000023f1fd3b8) slide = 0xfe70000
+ 		      __LINKEDIT [0x0000000247aa0000 - 0x000000027f110000) slide = 0xfe70000
+ Adding new image at address=0x000000019caba000.
+ address=0x000000019caba000 uuid=82426BAB-A0A9-3C99-8A86-DABB3A0BA072 path='/usr/lib/system/libsystem_dnssd.dylib'
+ 		          __TEXT [0x000000019caba000 - 0x000000019cac3000) slide = 0xfe70000
+ 		    __DATA_CONST [0x00000001e4329a78 - 0x00000001e4329af0) slide = 0xfe70000
+ 		    __AUTH_CONST [0x00000001ec32d2e8 - 0x00000001ec32d4d0) slide = 0xfe70000
+ 		          __DATA [0x00000001e65b6d30 - 0x00000001e65b6d60) slide = 0xfe70000
+ 		      __LINKEDIT [0x0000000247aa0000 - 0x000000027f110000) slide = 0xfe70000
+ Adding new image at address=0x000000019013d000.
+ address=0x000000019013d000 uuid=0C18273A-0DB8-3522-853B-67A2187EEF07 path='/usr/lib/system/libsystem_featureflags.dylib'
+ 		          __TEXT [0x000000019013d000 - 0x0000000190140000) slide = 0xfe70000
+ 		    __DATA_CONST [0x00000001e4279100 - 0x00000001e4279140) slide = 0xfe70000
+ 		    __AUTH_CONST [0x00000001eb411d70 - 0x00000001eb411ef0) slide = 0xfe70000
+ 		          __DATA [0x00000001e63febe8 - 0x00000001e63fec21) slide = 0xfe70000
+ 		    __DATA_DIRTY [0x00000001e7573ae8 - 0x00000001e7573af8) slide = 0xfe70000
+ 		      __LINKEDIT [0x0000000247aa0000 - 0x000000027f110000) slide = 0xfe70000
+ Adding new image at address=0x00000001902d9000.
+ address=0x00000001902d9000 uuid=8F2A7530-B8D3-3705-B2B7-9347D9495223 path='/usr/lib/system/libsystem_info.dylib'
+ 		          __TEXT [0x00000001902d9000 - 0x0000000190305ffc) slide = 0xfe70000
+ 		    __DATA_CONST [0x00000001e427df08 - 0x00000001e427e468) slide = 0xfe70000
+ 		    __AUTH_CONST [0x00000001eb419018 - 0x00000001eb41a1b0) slide = 0xfe70000
+ 		          __AUTH [0x00000001e7a40620 - 0x00000001e7a407f0) slide = 0xfe70000
+ 		          __DATA [0x00000001e64180f8 - 0x00000001e6418c88) slide = 0xfe70000
+ 		    __DATA_DIRTY [0x00000001e7581870 - 0x00000001e7581b18) slide = 0xfe70000
+ 		      __LINKEDIT [0x0000000247aa0000 - 0x000000027f110000) slide = 0xfe70000
+ Adding new image at address=0x000000019ca1c000.
+ address=0x000000019ca1c000 uuid=72899DE6-A120-389C-90DC-B94C392EF655 path='/usr/lib/system/libsystem_m.dylib'
+ 		          __TEXT [0x000000019ca1c000 - 0x000000019ca52ff4) slide = 0xfe70000
+ 		    __AUTH_CONST [0x00000001ec32b3a0 - 0x00000001ec32b3c0) slide = 0xfe70000
+ 		          __DATA [0x00000001e65b4224 - 0x00000001e65b4228) slide = 0xfe70000
+ 		      __LINKEDIT [0x0000000247aa0000 - 0x000000027f110000) slide = 0xfe70000
+ Adding new image at address=0x00000001900bf000.
+ address=0x00000001900bf000 uuid=00379936-C90E-3D9D-A569-3F97338F1472 path='/usr/lib/system/libsystem_malloc.dylib'
+ 		          __TEXT [0x00000001900bf000 - 0x00000001900f6000) slide = 0xfe70000
+ 		    __DATA_CONST [0x00000001e4278f10 - 0x00000001e4279100) slide = 0xfe70000
+ 		    __AUTH_CONST [0x00000001eb3fd188 - 0x00000001eb3fda38) slide = 0xfe70000
+ 		          __AUTH [0x00000001e7a34000 - 0x00000001e7a3c000) slide = 0xfe70000
+ 		          __DATA [0x00000001e63fc8f0 - 0x00000001e63febe4) slide = 0xfe70000
+ 		    __DATA_DIRTY [0x00000001e756fea0 - 0x00000001e75700b0) slide = 0xfe70000
+ 		      __LINKEDIT [0x0000000247aa0000 - 0x000000027f110000) slide = 0xfe70000
+ Adding new image at address=0x00000001958da000.
+ address=0x00000001958da000 uuid=9DBF57DB-0008-3584-89A3-1463AB9E4967 path='/usr/lib/system/libsystem_networkextension.dylib'
+ 		          __TEXT [0x00000001958da000 - 0x00000001958f3ff8) slide = 0xfe70000
+ 		    __DATA_CONST [0x00000001e42a1218 - 0x00000001e42a1898) slide = 0xfe70000
+ 		    __AUTH_CONST [0x00000001eba99cb8 - 0x00000001eba9a8d8) slide = 0xfe70000
+ 		          __DATA [0x00000001e64e46a8 - 0x00000001e64e4d78) slide = 0xfe70000
+ 		    __DATA_DIRTY [0x00000001e75ce560 - 0x00000001e75ce5a0) slide = 0xfe70000
+ 		      __LINKEDIT [0x0000000247aa0000 - 0x000000027f110000) slide = 0xfe70000
+ Adding new image at address=0x0000000193abb000.
+ address=0x0000000193abb000 uuid=7DA7113E-E87A-3E78-AD4F-77F6EC076E42 path='/usr/lib/system/libsystem_notify.dylib'
+ 		          __TEXT [0x0000000193abb000 - 0x0000000193acc000) slide = 0xfe70000
+ 		    __DATA_CONST [0x00000001e4294ff0 - 0x00000001e4295148) slide = 0xfe70000
+ 		    __AUTH_CONST [0x00000001eb9a4ac0 - 0x00000001eb9a4e40) slide = 0xfe70000
+ 		          __DATA [0x00000001e64c7f80 - 0x00000001e64c7fd1) slide = 0xfe70000
+ 		    __DATA_DIRTY [0x00000001e759b1b8 - 0x00000001e759b1c0) slide = 0xfe70000
+ 		      __LINKEDIT [0x0000000247aa0000 - 0x000000027f110000) slide = 0xfe70000
+ Adding new image at address=0x000000019b2de000.
+ address=0x000000019b2de000 uuid=3BC895C5-B10E-39F4-B761-E79D5719FB1D path='/usr/lib/system/libsystem_sandbox.dylib'
+ 		          __TEXT [0x000000019b2de000 - 0x000000019b2e3ff4) slide = 0xfe70000
+ 		    __DATA_CONST [0x00000001e43204a0 - 0x00000001e4320520) slide = 0xfe70000
+ 		    __AUTH_CONST [0x00000001ec13b728 - 0x00000001ec13b930) slide = 0xfe70000
+ 		          __DATA [0x00000001e658d5e8 - 0x00000001e658d610) slide = 0xfe70000
+ 		      __LINKEDIT [0x0000000247aa0000 - 0x000000027f110000) slide = 0xfe70000
+ Adding new image at address=0x000000019cab3000.
+ address=0x000000019cab3000 uuid=1C92CD80-54E6-3E70-BB3C-7264A160AD7C path='/usr/lib/system/libsystem_secinit.dylib'
+ 		          __TEXT [0x000000019cab3000 - 0x000000019cab5ffc) slide = 0xfe70000
+ 		    __DATA_CONST [0x00000001e43299e8 - 0x00000001e4329a58) slide = 0xfe70000
+ 		    __AUTH_CONST [0x00000001ec32ce10 - 0x00000001ec32d0e8) slide = 0xfe70000
+ 		          __DATA [0x00000001e65b6cf0 - 0x00000001e65b6d30) slide = 0xfe70000
+ 		      __LINKEDIT [0x0000000247aa0000 - 0x000000027f110000) slide = 0xfe70000
+ Adding new image at address=0x0000000190265000.
+ address=0x0000000190265000 uuid=A7D3C07D-0A1E-3C4C-8FBA-66905E16BF99 path='/usr/lib/system/libsystem_kernel.dylib'
+ 		          __TEXT [0x0000000190265000 - 0x000000019029fff0) slide = 0xfe70000
+ 		    __DATA_CONST [0x00000001e427b790 - 0x00000001e427da70) slide = 0xfe70000
+ 		    __AUTH_CONST [0x00000001eb417ee0 - 0x00000001eb418000) slide = 0xfe70000
+ 		          __DATA [0x00000001e6407e18 - 0x00000001e6408090) slide = 0xfe70000
+ 		    __DATA_DIRTY [0x00000001e7577988 - 0x00000001e757805c) slide = 0xfe70000
+ 		      __LINKEDIT [0x0000000247aa0000 - 0x000000027f110000) slide = 0xfe70000
+ Adding new image at address=0x00000001902d2000.
+ address=0x00000001902d2000 uuid=E7E2F10A-772A-397F-BD19-A7EA5A54E49F path='/usr/lib/system/libsystem_platform.dylib'
+ 		          __TEXT [0x00000001902d2000 - 0x00000001902d8ffc) slide = 0xfe70000
+ 		    __DATA_CONST [0x00000001e427dee8 - 0x00000001e427df08) slide = 0xfe70000
+ 		    __AUTH_CONST [0x00000001eb418e08 - 0x00000001eb419018) slide = 0xfe70000
+ 		          __DATA [0x00000001e64180b8 - 0x00000001e64180f8) slide = 0xfe70000
+ 		    __DATA_DIRTY [0x00000001e7581858 - 0x00000001e758186c) slide = 0xfe70000
+ 		      __LINKEDIT [0x0000000247aa0000 - 0x000000027f110000) slide = 0xfe70000
+ Adding new image at address=0x00000001902a0000.
+ address=0x00000001902a0000 uuid=E4DEBB6E-421D-33D0-9E17-77AE0E0FE4DC path='/usr/lib/system/libsystem_pthread.dylib'
+ 		          __TEXT [0x00000001902a0000 - 0x00000001902acff4) slide = 0xfe70000
+ 		    __DATA_CONST [0x00000001e427da70 - 0x00000001e427daa8) slide = 0xfe70000
+ 		    __AUTH_CONST [0x00000001eb418000 - 0x00000001eb418230) slide = 0xfe70000
+ 		          __DATA [0x00000001e640c000 - 0x00000001e6418046) slide = 0xfe70000
+ 		    __DATA_DIRTY [0x00000001e757c000 - 0x00000001e7581838) slide = 0xfe70000
+ 		      __LINKEDIT [0x0000000247aa0000 - 0x000000027f110000) slide = 0xfe70000
+ Adding new image at address=0x000000019731d000.
+ address=0x000000019731d000 uuid=2D7D536C-1D08-304A-9E67-BFB1E99301FE path='/usr/lib/system/libsystem_symptoms.dylib'
+ 		          __TEXT [0x000000019731d000 - 0x0000000197325ff4) slide = 0xfe70000
+ 		    __DATA_CONST [0x00000001e42a7ff0 - 0x00000001e42a81a0) slide = 0xfe70000
+ 		    __AUTH_CONST [0x00000001ebbdff78 - 0x00000001ebbe0240) slide = 0xfe70000
+ 		          __DATA [0x00000001e6513698 - 0x00000001e65136d8) slide = 0xfe70000
+ 		    __DATA_DIRTY [0x00000001e75da5d8 - 0x00000001e75da5e8) slide = 0xfe70000
+ 		      __LINKEDIT [0x0000000247aa0000 - 0x000000027f110000) slide = 0xfe70000
+ Adding new image at address=0x0000000190007000.
+ address=0x0000000190007000 uuid=4AF0EA7D-E9F4-30E7-914D-FB292EDB7F37 path='/usr/lib/system/libsystem_trace.dylib'
+ 		          __TEXT [0x0000000190007000 - 0x0000000190022000) slide = 0xfe70000
+ 		    __DATA_CONST [0x00000001eb3f9ef8 - 0x00000001eb3fa808) slide = 0xfe70000
+ 		    __AUTH_CONST [0x00000001eb3fa808 - 0x00000001eb3fb680) slide = 0xfe70000
+ 		          __AUTH [0x00000001e7a30a50 - 0x00000001e7a30c08) slide = 0xfe70000
+ 		          __DATA [0x00000001e63f4368 - 0x00000001e63f4590) slide = 0xfe70000
+ 		    __DATA_DIRTY [0x00000001e756f958 - 0x00000001e756fdc8) slide = 0xfe70000
+ 		      __LINKEDIT [0x0000000247aa0000 - 0x000000027f110000) slide = 0xfe70000
+ Adding new image at address=0x000000019ca8d000.
+ address=0x000000019ca8d000 uuid=FB2051CF-36B6-348F-B8DF-5B2F702F6290 path='/usr/lib/system/libunwind.dylib'
+ 		          __TEXT [0x000000019ca8d000 - 0x000000019ca98000) slide = 0xfe70000
+ 		    __DATA_CONST [0x00000001e43292a8 - 0x00000001e43295c8) slide = 0xfe70000
+ 		    __AUTH_CONST [0x00000001ec32c388 - 0x00000001ec32c498) slide = 0xfe70000
+ 		          __DATA [0x00000001e65b42b0 - 0x00000001e65b4cb1) slide = 0xfe70000
+ 		      __LINKEDIT [0x0000000247aa0000 - 0x000000027f110000) slide = 0xfe70000
+ Adding new image at address=0x000000018ffc0000.
+ address=0x000000018ffc0000 uuid=84971772-939B-3130-8908-B7A38851A516 path='/usr/lib/system/libxpc.dylib'
+ 		          __TEXT [0x000000018ffc0000 - 0x0000000190007000) slide = 0xfe70000
+ 		    __DATA_CONST [0x00000001eb3f38c0 - 0x00000001eb3f9ef8) slide = 0xfe70000
+ 		          __DATA [0x00000001e63f35f8 - 0x00000001e63f4368) slide = 0xfe70000
+ 		    __DATA_DIRTY [0x00000001e756ee18 - 0x00000001e756f958) slide = 0xfe70000
+ 		      __LINKEDIT [0x0000000247aa0000 - 0x000000027f110000) slide = 0xfe70000
+ Adding new image at address=0x000000019024d000.
+ address=0x000000019024d000 uuid=43940F08-B65E-3888-8CD3-C52398EB1CA1 path='/usr/lib/libc++abi.dylib'
+ 		          __TEXT [0x000000019024d000 - 0x0000000190265000) slide = 0xfe70000
+ 		    __DATA_CONST [0x00000001e427b338 - 0x00000001e427b790) slide = 0xfe70000
+ 		    __AUTH_CONST [0x00000001eb414b80 - 0x00000001eb417ee0) slide = 0xfe70000
+ 		          __AUTH [0x00000001e7a40578 - 0x00000001e7a405d0) slide = 0xfe70000
+ 		          __DATA [0x00000001e6407ac0 - 0x00000001e6407e18) slide = 0xfe70000
+ 		    __DATA_DIRTY [0x00000001e7577960 - 0x00000001e7577988) slide = 0xfe70000
+ 		      __LINKEDIT [0x0000000247aa0000 - 0x000000027f110000) slide = 0xfe70000
+ Adding new image at address=0x000000018fed8000.
+ address=0x000000018fed8000 uuid=1C0364B5-D7E3-3170-BAA6-9C28F400E7CC path='/usr/lib/libobjc.A.dylib'
+ 		          __TEXT [0x000000018fed8000 - 0x000000018ff26f09) slide = 0xfe70000
+ 		    __DATA_CONST [0x00000001eb3ec000 - 0x00000001eb3ecfb8) slide = 0xfe70000
+ 		    __AUTH_CONST [0x00000001eb3ecfc0 - 0x00000001eb3edbd0) slide = 0xfe70000
+ 		          __AUTH [0x00000001e7a2de08 - 0x00000001e7a2de80) slide = 0xfe70000
+ 		          __DATA [0x00000001e63f0000 - 0x00000001e63f35e0) slide = 0xfe70000
+ 		    __DATA_DIRTY [0x00000001e756a280 - 0x00000001e756d090) slide = 0xfe70000
+ 		       __OBJC_RO [0x00000001dfbdf360 - 0x00000001e4277ff8) slide = 0xfe70000
+ 		       __OBJC_RW [0x00000001e7350000 - 0x00000001e756a260) slide = 0xfe70000
+ 		      __LINKEDIT [0x0000000247aa0000 - 0x000000027f110000) slide = 0xfe70000
+ Adding new image at address=0x000000019ca98000.
+ address=0x000000019ca98000 uuid=5A83FBC3-0944-3D77-8DF2-03E262F67AFA path='/usr/lib/liboah.dylib'
+ 		          __TEXT [0x000000019ca98000 - 0x000000019caa0000) slide = 0xfe70000
+ 		    __DATA_CONST [0x00000001e43295c8 - 0x00000001e4329600) slide = 0xfe70000
+ 		    __AUTH_CONST [0x00000001ec32c498 - 0x00000001ec32c800) slide = 0xfe70000
+ 		          __DATA [0x00000001e65b4cb8 - 0x00000001e65b5ce0) slide = 0xfe70000
+ 		      __LINKEDIT [0x0000000247aa0000 - 0x000000027f110000) slide = 0xfe70000
+ Adding new image at address=0x00000001901bf000.
+ address=0x00000001901bf000 uuid=93FBD681-FC78-33A3-AFFE-568702676142 path='/usr/lib/libc++.1.dylib'
+ 		          __TEXT [0x00000001901bf000 - 0x000000019024cff8) slide = 0xfe70000
+ 		    __DATA_CONST [0x00000001e427a9c8 - 0x00000001e427b338) slide = 0xfe70000
+ 		    __AUTH_CONST [0x00000001eb412848 - 0x00000001eb414b80) slide = 0xfe70000
+ 		          __AUTH [0x00000001e7a3e0c0 - 0x00000001e7a40578) slide = 0xfe70000
+ 		          __DATA [0x00000001e6401000 - 0x00000001e6407ac0) slide = 0xfe70000
+ 		    __DATA_DIRTY [0x00000001e7576680 - 0x00000001e7577960) slide = 0xfe70000
+ 		      __LINKEDIT [0x0000000247aa0000 - 0x000000027f110000) slide = 0xfe70000
+ DynamicLoaderDarwin::ModulesDidLoad[0] F0A54B2D-8751-35F1-A3CF-F1A02F842211 (arm64e) "/usr/lib/libSystem.B.dylib"
+ DynamicLoaderDarwin::ModulesDidLoad[1] C683623C-1FF6-3133-9E28-28672FDBA4D3 (arm64e) "/usr/lib/system/libcache.dylib"
+ DynamicLoaderDarwin::ModulesDidLoad[2] BFDF8F55-D3DC-3A92-B8A1-8EF165A56F1B (arm64e) "/usr/lib/system/libcommonCrypto.dylib"
+ DynamicLoaderDarwin::ModulesDidLoad[3] B29A99B2-7ADE-3371-A774-B690BEC3C406 (arm64e) "/usr/lib/system/libcompiler_rt.dylib"
+ DynamicLoaderDarwin::ModulesDidLoad[4] 65612C42-C5E4-3821-B71D-DDE620FB014C (arm64e) "/usr/lib/system/libcopyfile.dylib"
+ DynamicLoaderDarwin::ModulesDidLoad[5] B3AC12C0-8ED6-35A2-86C6-0BFA55BFF333 (arm64e) "/usr/lib/system/libcorecrypto.dylib"
+ DynamicLoaderDarwin::ModulesDidLoad[6] 8790BA20-19EC-3A36-8975-E34382D9747C (arm64e) "/usr/lib/system/libdispatch.dylib"
+ DynamicLoaderDarwin::ModulesDidLoad[7] 4BB77515-DBA8-3EDF-9AF7-3C9EAE959EA6 (arm64e) "/usr/lib/system/libdyld.dylib"
+ DynamicLoaderDarwin::ModulesDidLoad[8] F7CE9486-FFF5-3CB8-B26F-75811EF4283A (arm64e) "/usr/lib/system/libkeymgr.dylib"
+ DynamicLoaderDarwin::ModulesDidLoad[9] 1A7038EC-EE49-35AE-8A3C-C311083795FB (arm64e) "/usr/lib/system/libmacho.dylib"
+ DynamicLoaderDarwin::ModulesDidLoad[10] 3011123B-C35C-35FC-AB0B-8D775C9109D1 (arm64e) "/usr/lib/system/libquarantine.dylib"
+ DynamicLoaderDarwin::ModulesDidLoad[11] CE63E895-25E4-350C-BB79-0EFD3AC899E5 (arm64e) "/usr/lib/system/libremovefile.dylib"
+ DynamicLoaderDarwin::ModulesDidLoad[12] 2EA1DA8E-A94D-32EA-A64F-DD586FE72599 (arm64e) "/usr/lib/system/libsystem_asl.dylib"
+ DynamicLoaderDarwin::ModulesDidLoad[13] A81CDBDB-D1B1-386E-9029-2F6E0F685E3A (arm64e) "/usr/lib/system/libsystem_blocks.dylib"
+ DynamicLoaderDarwin::ModulesDidLoad[14] 1B84A7E4-8958-330C-98B8-27D491DFF69E (arm64e) "/usr/lib/system/libsystem_c.dylib"
+ DynamicLoaderDarwin::ModulesDidLoad[15] FA0C6F96-A737-3F29-B640-99E313873A21 (arm64e) "/usr/lib/system/libsystem_collections.dylib"
+ DynamicLoaderDarwin::ModulesDidLoad[16] 5E85DB71-174E-3E61-A3C9-36D5E0CBBF46 (arm64e) "/usr/lib/system/libsystem_configuration.dylib"
+ DynamicLoaderDarwin::ModulesDidLoad[17] 8E716F51-A02E-3005-9F6F-84163BFAF1AE (arm64e) "/usr/lib/system/libsystem_containermanager.dylib"
+ DynamicLoaderDarwin::ModulesDidLoad[18] 0ECFD7D1-0230-3C32-BDD7-4715D94A28E6 (arm64e) "/usr/lib/system/libsystem_coreservices.dylib"
+ DynamicLoaderDarwin::ModulesDidLoad[19] 67509907-7BCE-3723-A305-0B042A41FDA5 (arm64e) "/usr/lib/system/libsystem_darwin.dylib"
+ DynamicLoaderDarwin::ModulesDidLoad[20] F1E52C1A-7156-3BED-AD5B-1CE3AFFDFCE3 (arm64e) "/usr/lib/system/libsystem_darwindirectory.dylib"
+ DynamicLoaderDarwin::ModulesDidLoad[21] 82426BAB-A0A9-3C99-8A86-DABB3A0BA072 (arm64e) "/usr/lib/system/libsystem_dnssd.dylib"
+ DynamicLoaderDarwin::ModulesDidLoad[22] 0C18273A-0DB8-3522-853B-67A2187EEF07 (arm64e) "/usr/lib/system/libsystem_featureflags.dylib"
+ DynamicLoaderDarwin::ModulesDidLoad[23] 8F2A7530-B8D3-3705-B2B7-9347D9495223 (arm64e) "/usr/lib/system/libsystem_info.dylib"
+ DynamicLoaderDarwin::ModulesDidLoad[24] 72899DE6-A120-389C-90DC-B94C392EF655 (arm64e) "/usr/lib/system/libsystem_m.dylib"
+ DynamicLoaderDarwin::ModulesDidLoad[25] 00379936-C90E-3D9D-A569-3F97338F1472 (arm64e) "/usr/lib/system/libsystem_malloc.dylib"
+ DynamicLoaderDarwin::ModulesDidLoad[26] 9DBF57DB-0008-3584-89A3-1463AB9E4967 (arm64e) "/usr/lib/system/libsystem_networkextension.dylib"
+ DynamicLoaderDarwin::ModulesDidLoad[27] 7DA7113E-E87A-3E78-AD4F-77F6EC076E42 (arm64e) "/usr/lib/system/libsystem_notify.dylib"
+ DynamicLoaderDarwin::ModulesDidLoad[28] 3BC895C5-B10E-39F4-B761-E79D5719FB1D (arm64e) "/usr/lib/system/libsystem_sandbox.dylib"
+ DynamicLoaderDarwin::ModulesDidLoad[29] 1C92CD80-54E6-3E70-BB3C-7264A160AD7C (arm64e) "/usr/lib/system/libsystem_secinit.dylib"
+ DynamicLoaderDarwin::ModulesDidLoad[30] A7D3C07D-0A1E-3C4C-8FBA-66905E16BF99 (arm64e) "/usr/lib/system/libsystem_kernel.dylib"
+ DynamicLoaderDarwin::ModulesDidLoad[31] E7E2F10A-772A-397F-BD19-A7EA5A54E49F (arm64e) "/usr/lib/system/libsystem_platform.dylib"
+ DynamicLoaderDarwin::ModulesDidLoad[32] E4DEBB6E-421D-33D0-9E17-77AE0E0FE4DC (arm64e) "/usr/lib/system/libsystem_pthread.dylib"
+ DynamicLoaderDarwin::ModulesDidLoad[33] 2D7D536C-1D08-304A-9E67-BFB1E99301FE (arm64e) "/usr/lib/system/libsystem_symptoms.dylib"
+ DynamicLoaderDarwin::ModulesDidLoad[34] 4AF0EA7D-E9F4-30E7-914D-FB292EDB7F37 (arm64e) "/usr/lib/system/libsystem_trace.dylib"
+ DynamicLoaderDarwin::ModulesDidLoad[35] FB2051CF-36B6-348F-B8DF-5B2F702F6290 (arm64e) "/usr/lib/system/libunwind.dylib"
+ DynamicLoaderDarwin::ModulesDidLoad[36] 84971772-939B-3130-8908-B7A38851A516 (arm64e) "/usr/lib/system/libxpc.dylib"
+ DynamicLoaderDarwin::ModulesDidLoad[37] 43940F08-B65E-3888-8CD3-C52398EB1CA1 (arm64e) "/usr/lib/libc++abi.dylib"
+ DynamicLoaderDarwin::ModulesDidLoad[38] 1C0364B5-D7E3-3170-BAA6-9C28F400E7CC (arm64e) "/usr/lib/libobjc.A.dylib"
+ DynamicLoaderDarwin::ModulesDidLoad[39] 5A83FBC3-0944-3D77-8DF2-03E262F67AFA (arm64e) "/usr/lib/liboah.dylib"
+ DynamicLoaderDarwin::ModulesDidLoad[40] 93FBD681-FC78-33A3-AFFE-568702676142 (arm64e) "/usr/lib/libc++.1.dylib"
+ Breakpoint::ModulesChanged: num_modules: 41 load: 1 delete_locations: 0
+
+ Breakpoint::ModulesChanged: num_modules: 41 load: 1 delete_locations: 0
+
+ Breakpoint::ModulesChanged: num_modules: 41 load: 1 delete_locations: 0
+
+ Breakpoint::ModulesChanged: num_modules: 41 load: 1 delete_locations: 0
+
+ Hit breakpoint location: -3.1: 
+  module = /usr/lib/dyld
+  symbol = _dyld_debugger_notification
+  address = 0x000000018ff28e20
+  resolved = true
+  hardware = false
+  hit count = 2   
+, continuing.
+
+ StopInfo::ShouldStop async callback says we should not stop, returning ShouldStop of false.
+ ThreadList::ShouldStop overall should_stop = 0
+ ThreadList::ShouldReportStop 1 threads
+ Thread::ShouldReportStop() tid = 0x5b02: returning vote 0 for current plan
+ Returning no opinion
+ Process::ShouldBroadcastEvent: should_resume: 1 state: stopped was_restarted: 0 report_stop_vote: 0.
+ Process::ShouldBroadcastEvent (0x1466a6fe0) Restarting process from state: stopped
+ Process::PrivateResume() m_stop_id = 6, public state: running private state: stopped
+ Thread::PushPlan(0x0x146678598): "Single stepping past breakpoint site 9 at 0x18ff28e20", tid = 0x5b02.
+ WillResume Thread #1 (0x0x146678598): tid = 0x5b02, pc = 0x18ff28e20, sp = 0x16fdfd8d0, fp = 0x16fdfdac0, plan = 'Step over breakpoint trap', state = stepping, stop others = 1
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() remove at addr = 0x18ff28e20
+ (plugin = gdb-remote, state = running)
+ Process thinks the process has resumed.
+ Process::ShouldBroadcastEvent (0x1466a6fe0) => new state: stopped, last broadcast state: running - NO
+ Process::HandlePrivateEvent (pid = 1960) suppressing state stopped (old state running): should_broadcast == false
+ timeout = <infinite>, event_sp)...
+ Process::ShouldBroadcastEvent (0x1466cf2d0) => new state: running, last broadcast state: running - NO
+ Process::HandlePrivateEvent (pid = 1960) suppressing state running (old state running): should_broadcast == false
+ timeout = <infinite>, event_sp)...
+ (plugin = gdb-remote, state = stopped)
+ (plugin = gdb-remote, state = stopped, stop_id = 7
+ 0x146678598: tid = 0x5b02: stop info = <NULL> (stop_id = 7)
+ 0x146678598: tid = 0x5b02: stop info = trace (stop_id = 7)
+ 
+ ThreadList::ShouldStop: 1 threads, 1 unsuspended threads
+ Thread::ShouldStop(0x146678598) for tid = 0x5b02 0x5b02, pc = 0x000000018ff71ac8
+ ^^^^^^^^ Thread::ShouldStop Begin ^^^^^^^^
+ Plan stack initial state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+      Element 1: Single stepping past breakpoint site 9 at 0x18ff28e20
+
+ Step over breakpoint stopped for reason: trace.
+ Plan Step over breakpoint trap should stop: 0.
+ Completed step over breakpoint plan.
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() add at addr = 0x18ff28e20
+ Plan Step over breakpoint trap auto-continue: true.
+ Popping plan: "Step over breakpoint trap", tid = 0x5b02.
+ Plan stack final state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+    Completed plan stack:
+      Element 0: Single stepping past breakpoint site 9 at 0x18ff28e20
+
+ vvvvvvvv Thread::ShouldStop End (returning 0) vvvvvvvv
+ ThreadList::ShouldStop overall should_stop = 0
+ ThreadList::ShouldReportStop 1 threads
+ Thread::ShouldReportStop() tid = 0x5b02: returning vote for complete stack's back plan
+ Returning vote: no
+ Returning no
+ Process::ShouldBroadcastEvent: should_resume: 1 state: stopped was_restarted: 0 report_stop_vote: -1.
+ Process::ShouldBroadcastEvent (0x1466cf2d0) Restarting process from state: stopped
+ Process::PrivateResume() m_stop_id = 7, public state: running private state: stopped
+ WillResume Thread #1 (0x0x146678598): tid = 0x5b02, pc = 0x18ff71ac8, sp = 0x16fdfd8d0, fp = 0x16fdfdac0, plan = 'base plan', state = running, stop others = 0
+ (plugin = gdb-remote, state = running)
+ Process thinks the process has resumed.
+ Process::ShouldBroadcastEvent (0x1466cf2d0) => new state: stopped, last broadcast state: running - NO
+ Process::HandlePrivateEvent (pid = 1960) suppressing state stopped (old state running): should_broadcast == false
+ timeout = <infinite>, event_sp)...
+ Process::ShouldBroadcastEvent (0x137c14f50) => new state: running, last broadcast state: running - NO
+ Process::HandlePrivateEvent (pid = 1960) suppressing state running (old state running): should_broadcast == false
+ timeout = <infinite>, event_sp)...
+ (plugin = gdb-remote, state = stopped)
+ (plugin = gdb-remote, state = stopped, stop_id = 8
+ 0x146678598: tid = 0x5b02: stop info = <NULL> (stop_id = 8)
+ 0x146678598: tid = 0x5b02: stop info = breakpoint 3.1 (stop_id = 8)
+ 
+ ThreadList::ShouldStop: 1 threads, 1 unsuspended threads
+ Thread::ShouldStop(0x146678598) for tid = 0x5b02 0x5b02, pc = 0x0000000100003f18
+ ^^^^^^^^ Thread::ShouldStop Begin ^^^^^^^^
+ Plan stack initial state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+
+ Hit breakpoint location: 3.1: 
+  module = /Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set01/problem03
+  compile unit = problem03.c
+  function = main
+  location = /Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set01/problem03.c:19:7
+  address = 0x0000000100003f18
+  resolved = true
+  hardware = false
+  hit count = 1   
+, stopping.
+
+ Base plan discarding thread plans for thread tid = 0x5b02 (breakpoint hit.)
+ Discarding thread plans for thread (tid = 0x5b02, force 0)
+ Base plan says should stop: 1.
+ Plan stack final state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+
+ vvvvvvvv Thread::ShouldStop End (returning 1) vvvvvvvv
+ ThreadList::ShouldStop overall should_stop = 1
+ Process::ShouldBroadcastEvent (0x1466d5d10) => new state: stopped, last broadcast state: stopped - YES
+ Process::HandlePrivateEvent (pid = 1960) broadcasting new state stopped (old state stopped) to public
+ timeout = <infinite>, event_sp)...
+ (plugin = gdb-remote, state = stopped, restarted = 0)
+ (plugin = gdb-remote, state = stopped) -- unlocking run lock
+ Process::PerformAction returning from action with m_should_stop: 1.
+ Frame #0 not recognized
+ Processing command: n
+ HandleCommand, cmd_obj : 'thread step-over'
+ HandleCommand, (revised) command_string: 'thread step-over'
+ HandleCommand, wants_raw_input:'False'
+ HandleCommand, command line after removing command name(s): ''
+ SynthesizeTailCallFrames: can't find next function
+ Thread::PushPlan(0x0x146678598): "Stepping over line problem03.c:19:7.", tid = 0x5b02.
+ (plugin = gdb-remote) -- locking run lock
+ Process::PrivateResume() m_stop_id = 8, public state: stopped private state: stopped
+ Thread::PushPlan(0x0x146678598): "Single stepping past breakpoint site 8 at 0x100003f18", tid = 0x5b02.
+ WillResume Thread #1 (0x0x146678598): tid = 0x5b02, pc = 0x100003f18, sp = 0x16fdfed50, fp = 0x16fdfed70, plan = 'Step over breakpoint trap', state = stepping, stop others = 1
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() remove at addr = 0x100003f18
+ (plugin = gdb-remote, state = running)
+ Current Plan for thread 1(0x146678598) (0x5b02, stepping): Step over breakpoint trap being asked whether we should report run.
+ Process::ShouldBroadcastEvent (0x137a05a20) => new state: running, last broadcast state: running - YES
+ Process::HandlePrivateEvent (pid = 1960) broadcasting new state running (old state running) to public
+ Process::PushProcessIOHandler pushing IO handler
+ Process thinks the process has resumed.
+ Process::HandlePrivateEvent updated m_iohandler_sync to 2
+ waited from m_iohandler_sync to change from 1. New value is 2.
+ timeout = <infinite>, event_sp)...
+ (plugin = gdb-remote, state = running, restarted = 0)
+ HandleCommand, command succeeded
+ (plugin = gdb-remote, state = stopped)
+ (plugin = gdb-remote, state = stopped, stop_id = 9
+ 0x146678598: tid = 0x5b02: stop info = <NULL> (stop_id = 9)
+ 0x146678598: tid = 0x5b02: stop info = trace (stop_id = 9)
+ 
+ ThreadList::ShouldStop: 1 threads, 1 unsuspended threads
+ Thread::ShouldStop(0x146678598) for tid = 0x5b02 0x5b02, pc = 0x0000000100003e40
+ ^^^^^^^^ Thread::ShouldStop Begin ^^^^^^^^
+ Plan stack initial state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+      Element 1: Stepping over line problem03.c:19:7 using ranges: [0x0000000100003f18-0x0000000100003f20).
+      Element 2: Single stepping past breakpoint site 8 at 0x100003f18
+
+ Step over breakpoint stopped for reason: trace.
+ Plan Step over breakpoint trap should stop: 1.
+ Completed step over breakpoint plan.
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() add at addr = 0x100003f18
+ Popping plan: "Step over breakpoint trap", tid = 0x5b02.
+ ThreadPlanStepOverRange reached 0x0000000100003e40.
+ Finding frames between main and input, retn-pc=0x100003f1c
+ GetCallEdges: Attempting to parse call site info for main
+ No call edge outgoing from main with retn-PC == 0x100003f1c
+ Target::AddBreakpoint (internal = yes) => break_id = -4: address = problem03[0x0000000100003f1c]
+
+
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() add at addr = 0x100003f1c
+ Thread::PushPlan(0x0x146678598): "Stepping out from problem03`input at problem03.c:3 returning to frame at problem03`main + 28 at problem03.c:19:6", tid = 0x5b02.
+ Plan Step range stepping over should stop: 0.
+ Plan stack final state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+      Element 1: Stepping over line problem03.c:19:7 using ranges: [0x0000000100003f18-0x0000000100003f20).
+      Element 2: Stepping out from problem03`input at problem03.c:3 returning to frame at problem03`main + 28 at problem03.c:19:6 using breakpoint site -4
+    Completed plan stack:
+      Element 0: Single stepping past breakpoint site 8 at 0x100003f18
+
+ vvvvvvvv Thread::ShouldStop End (returning 0) vvvvvvvv
+ ThreadList::ShouldStop overall should_stop = 0
+ ThreadList::ShouldReportStop 1 threads
+ Thread::ShouldReportStop() tid = 0x5b02: returning vote for complete stack's back plan
+ Returning vote: no
+ Returning no
+ Process::ShouldBroadcastEvent: should_resume: 1 state: stopped was_restarted: 0 report_stop_vote: -1.
+ Process::ShouldBroadcastEvent (0x12660c390) Restarting process from state: stopped
+ Process::PrivateResume() m_stop_id = 9, public state: running private state: stopped
+ WillResume Thread #1 (0x0x146678598): tid = 0x5b02, pc = 0x100003e40, sp = 0x16fdfed50, fp = 0x16fdfed70, plan = 'Step out', state = running, stop others = 0
+ (plugin = gdb-remote, state = running)
+ Process thinks the process has resumed.
+ Process::ShouldBroadcastEvent (0x12660c390) => new state: stopped, last broadcast state: running - NO
+ Process::HandlePrivateEvent (pid = 1960) suppressing state stopped (old state running): should_broadcast == false
+ timeout = <infinite>, event_sp)...
+ Process::ShouldBroadcastEvent (0x12660dab0) => new state: running, last broadcast state: running - NO
+ Process::HandlePrivateEvent (pid = 1960) suppressing state running (old state running): should_broadcast == false
+ timeout = <infinite>, event_sp)...
+ Process::GetSTDOUT (buf = 0x17046a8a0, size = 1024)
+ Process::GetSTDOUT (buf = 0x17046a8a0, size = 1024)
+ Process::GetSTDOUT (buf = 0x17046a8a0, size = 1024)
+ (plugin = gdb-remote, state = stopped)
+ (plugin = gdb-remote, state = stopped, stop_id = 10
+ 0x146678598: tid = 0x5b02: stop info = <NULL> (stop_id = 10)
+ 0x146678598: tid = 0x5b02: stop info = step-out (stop_id = 10)
+ 
+ ThreadList::ShouldStop: 1 threads, 1 unsuspended threads
+ Thread::ShouldStop(0x146678598) for tid = 0x5b02 0x5b02, pc = 0x0000000100003f1c
+ ^^^^^^^^ Thread::ShouldStop Begin ^^^^^^^^
+ Plan stack initial state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+      Element 1: Stepping over line problem03.c:19:7 using ranges: [0x0000000100003f18-0x0000000100003f20).
+      Element 2: Stepping out from problem03`input at problem03.c:3 returning to frame at problem03`main + 28 at problem03.c:19:6 using breakpoint site -4
+
+ Hit breakpoint location: -4.1: 
+  module = /Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set01/problem03
+  compile unit = problem03.c
+  function = main
+  location = /Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set01/problem03.c:19:6
+  address = 0x0000000100003f1c
+  resolved = true
+  hardware = false
+  hit count = 1   
+, stopping.
+
+ Plan Step out should stop: 1.
+ Completed step out plan.
+ Target::RemoveBreakpointByID (break_id = -4, internal = yes)
+
+ Target::DisableBreakpointByID (break_id = -4, internal = yes)
+
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() remove at addr = 0x100003f1c
+ Popping plan: "Step out", tid = 0x5b02.
+ ThreadPlanStepOverRange reached 0x0000000100003f1c.
+ Plan Step range stepping over should stop: 0.
+ Plan stack final state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+      Element 1: Stepping over line problem03.c:19:7 using ranges: [0x0000000100003f18-0x0000000100003f20).
+    Completed plan stack:
+      Element 0: Stepping out from problem03`input at problem03.c:3 returning to frame at problem03`main + 28 at problem03.c:19:6 using breakpoint site 0
+
+ vvvvvvvv Thread::ShouldStop End (returning 0) vvvvvvvv
+ ThreadList::ShouldStop overall should_stop = 0
+ ThreadList::ShouldReportStop 1 threads
+ Thread::ShouldReportStop() tid = 0x5b02: returning vote for complete stack's back plan
+ Returning vote: no
+ Returning no
+ Process::ShouldBroadcastEvent: should_resume: 1 state: stopped was_restarted: 0 report_stop_vote: -1.
+ Process::ShouldBroadcastEvent (0x137b05460) Restarting process from state: stopped
+ Process::PrivateResume() m_stop_id = 10, public state: running private state: stopped
+ Target::AddBreakpoint (internal = yes) => break_id = -5: names = {'start_wqthread', '_pthread_wqthread', '_pthread_start'}, modules(2) = libsystem_c.dylib, libSystem.B.dylib
+
+
+ WillResume Thread #1 (0x0x146678598): tid = 0x5b02, pc = 0x100003f1c, sp = 0x16fdfed50, fp = 0x16fdfed70, plan = 'Step range stepping over', state = stepping, stop others = 1
+ (plugin = gdb-remote, state = running)
+ Process thinks the process has resumed.
+ Process::ShouldBroadcastEvent (0x137b05460) => new state: stopped, last broadcast state: running - NO
+ Process::HandlePrivateEvent (pid = 1960) suppressing state stopped (old state running): should_broadcast == false
+ timeout = <infinite>, event_sp)...
+ Process::ShouldBroadcastEvent (0x137b065c0) => new state: running, last broadcast state: running - NO
+ Process::HandlePrivateEvent (pid = 1960) suppressing state running (old state running): should_broadcast == false
+ timeout = <infinite>, event_sp)...
+ (plugin = gdb-remote, state = stopped)
+ (plugin = gdb-remote, state = stopped, stop_id = 11
+ 0x146678598: tid = 0x5b02: stop info = <NULL> (stop_id = 11)
+ 0x146678598: tid = 0x5b02: stop info = trace (stop_id = 11)
+ 
+ ThreadList::ShouldStop: 1 threads, 1 unsuspended threads
+ Thread::ShouldStop(0x146678598) for tid = 0x5b02 0x5b02, pc = 0x0000000100003f20
+ ^^^^^^^^ Thread::ShouldStop Begin ^^^^^^^^
+ Plan stack initial state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+      Element 1: Stepping over line problem03.c:19:7 using ranges: [0x0000000100003f18-0x0000000100003f20).
+
+ ThreadPlanStepOverRange reached 0x0000000100003f20.
+ Step range plan out of range to 0x100003f20
+ ShouldStopHere callback returned 1 from 0x100003f20.
+ Plan Step range stepping over should stop: 1.
+ Completed step through range plan.
+ Popping plan: "Step range stepping over", tid = 0x5b02.
+ Plan stack final state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+    Completed plan stack:
+      Element 0: Stepping over line problem03.c:19:7 using ranges: [0x0000000100003f18-0x0000000100003f20).
+
+ vvvvvvvv Thread::ShouldStop End (returning 1) vvvvvvvv
+ ThreadList::ShouldStop overall should_stop = 1
+ Process::ShouldBroadcastEvent (0x137a08650) => new state: stopped, last broadcast state: stopped - YES
+ Process::HandlePrivateEvent (pid = 1960) broadcasting new state stopped (old state stopped) to public
+ timeout = <infinite>, event_sp)...
+ (plugin = gdb-remote, state = stopped, restarted = 0)
+ (plugin = gdb-remote, state = stopped) -- unlocking run lock
+ ThreadPlanStepOverRange reached 0x0000000100003f20.
+ Step range plan out of range to 0x100003f20
+ ShouldStopHere callback returned 1 from 0x100003f20.
+ Frame #0 not recognized
+ Processing command: n
+ HandleCommand, cmd_obj : 'thread step-over'
+ HandleCommand, (revised) command_string: 'thread step-over'
+ HandleCommand, wants_raw_input:'False'
+ HandleCommand, command line after removing command name(s): ''
+ SynthesizeTailCallFrames: can't find next function
+ Thread::PushPlan(0x0x146678598): "Stepping over line problem03.c:20:7.", tid = 0x5b02.
+ (plugin = gdb-remote) -- locking run lock
+ Process::PrivateResume() m_stop_id = 11, public state: stopped private state: stopped
+ WillResume Thread #1 (0x0x146678598): tid = 0x5b02, pc = 0x100003f20, sp = 0x16fdfed50, fp = 0x16fdfed70, plan = 'Step range stepping over', state = stepping, stop others = 0
+ (plugin = gdb-remote, state = running)
+ Current Plan for thread 1(0x146678598) (0x5b02, stepping): Step range stepping over being asked whether we should report run.
+ Process::ShouldBroadcastEvent (0x137a08390) => new state: running, last broadcast state: running - YES
+ Process thinks the process has resumed.
+ Process::HandlePrivateEvent (pid = 1960) broadcasting new state running (old state running) to public
+ Process::PushProcessIOHandler pushing IO handler
+ Process::HandlePrivateEvent updated m_iohandler_sync to 3
+ waited from m_iohandler_sync to change from 2. New value is 3.
+ timeout = <infinite>, event_sp)...
+ HandleCommand, command succeeded
+ (plugin = gdb-remote, state = running, restarted = 0)
+ (plugin = gdb-remote, state = stopped)
+ (plugin = gdb-remote, state = stopped, stop_id = 12
+ 0x146678598: tid = 0x5b02: stop info = <NULL> (stop_id = 12)
+ 0x146678598: tid = 0x5b02: stop info = trace (stop_id = 12)
+ 
+ ThreadList::ShouldStop: 1 threads, 1 unsuspended threads
+ Thread::ShouldStop(0x146678598) for tid = 0x5b02 0x5b02, pc = 0x0000000100003e40
+ ^^^^^^^^ Thread::ShouldStop Begin ^^^^^^^^
+ Plan stack initial state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+      Element 1: Stepping over line problem03.c:20:7 using ranges: [0x0000000100003f20-0x0000000100003f28).
+
+ ThreadPlanStepOverRange reached 0x0000000100003e40.
+ Finding frames between main and input, retn-pc=0x100003f24
+ No call edge outgoing from main with retn-PC == 0x100003f24
+ Target::AddBreakpoint (internal = yes) => break_id = -6: address = problem03[0x0000000100003f24]
+
+
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() add at addr = 0x100003f24
+ Thread::PushPlan(0x0x146678598): "Stepping out from problem03`input at problem03.c:3 returning to frame at problem03`main + 36 at problem03.c:20:6", tid = 0x5b02.
+ Plan Step range stepping over should stop: 0.
+ Plan stack final state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+      Element 1: Stepping over line problem03.c:20:7 using ranges: [0x0000000100003f20-0x0000000100003f28).
+      Element 2: Stepping out from problem03`input at problem03.c:3 returning to frame at problem03`main + 36 at problem03.c:20:6 using breakpoint site -6
+
+ vvvvvvvv Thread::ShouldStop End (returning 0) vvvvvvvv
+ ThreadList::ShouldStop overall should_stop = 0
+ ThreadList::ShouldReportStop 1 threads
+ Returning vote: no
+ Thread::ShouldReportStop() tid = 0x5b02: returning vote -1 for current plan
+ Returning no
+ Process::ShouldBroadcastEvent: should_resume: 1 state: stopped was_restarted: 0 report_stop_vote: -1.
+ Process::ShouldBroadcastEvent (0x137a08390) Restarting process from state: stopped
+ Process::PrivateResume() m_stop_id = 12, public state: running private state: stopped
+ WillResume Thread #1 (0x0x146678598): tid = 0x5b02, pc = 0x100003e40, sp = 0x16fdfed50, fp = 0x16fdfed70, plan = 'Step out', state = running, stop others = 0
+ (plugin = gdb-remote, state = running)
+ Process thinks the process has resumed.
+ Process::ShouldBroadcastEvent (0x137a08390) => new state: stopped, last broadcast state: running - NO
+ Process::HandlePrivateEvent (pid = 1960) suppressing state stopped (old state running): should_broadcast == false
+ timeout = <infinite>, event_sp)...
+ Process::ShouldBroadcastEvent (0x137a070b0) => new state: running, last broadcast state: running - NO
+ Process::HandlePrivateEvent (pid = 1960) suppressing state running (old state running): should_broadcast == false
+ timeout = <infinite>, event_sp)...
+ Process::GetSTDOUT (buf = 0x17046a8a0, size = 1024)
+ Process::GetSTDOUT (buf = 0x17046a8a0, size = 1024)
+ Process::GetSTDOUT (buf = 0x17046a8a0, size = 1024)
+ (plugin = gdb-remote, state = stopped)
+ (plugin = gdb-remote, state = stopped, stop_id = 13
+ 0x146678598: tid = 0x5b02: stop info = <NULL> (stop_id = 13)
+ 0x146678598: tid = 0x5b02: stop info = step-out (stop_id = 13)
+ 
+ ThreadList::ShouldStop: 1 threads, 1 unsuspended threads
+ Thread::ShouldStop(0x146678598) for tid = 0x5b02 0x5b02, pc = 0x0000000100003f24
+ ^^^^^^^^ Thread::ShouldStop Begin ^^^^^^^^
+ Plan stack initial state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+      Element 1: Stepping over line problem03.c:20:7 using ranges: [0x0000000100003f20-0x0000000100003f28).
+      Element 2: Stepping out from problem03`input at problem03.c:3 returning to frame at problem03`main + 36 at problem03.c:20:6 using breakpoint site -6
+
+ Hit breakpoint location: -6.1: 
+  module = /Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set01/problem03
+  compile unit = problem03.c
+  function = main
+  location = /Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set01/problem03.c:20:6
+  address = 0x0000000100003f24
+  resolved = true
+  hardware = false
+  hit count = 1   
+, stopping.
+
+ Plan Step out should stop: 1.
+ Completed step out plan.
+ Target::RemoveBreakpointByID (break_id = -6, internal = yes)
+
+ Target::DisableBreakpointByID (break_id = -6, internal = yes)
+
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() remove at addr = 0x100003f24
+ Popping plan: "Step out", tid = 0x5b02.
+ ThreadPlanStepOverRange reached 0x0000000100003f24.
+ Plan Step range stepping over should stop: 0.
+ Plan stack final state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+      Element 1: Stepping over line problem03.c:20:7 using ranges: [0x0000000100003f20-0x0000000100003f28).
+    Completed plan stack:
+      Element 0: Stepping out from problem03`input at problem03.c:3 returning to frame at problem03`main + 36 at problem03.c:20:6 using breakpoint site 0
+
+ vvvvvvvv Thread::ShouldStop End (returning 0) vvvvvvvv
+ ThreadList::ShouldStop overall should_stop = 0
+ ThreadList::ShouldReportStop 1 threads
+ Thread::ShouldReportStop() tid = 0x5b02: returning vote for complete stack's back plan
+ Returning vote: no
+ Returning no
+ Process::ShouldBroadcastEvent: should_resume: 1 state: stopped was_restarted: 0 report_stop_vote: -1.
+ Process::ShouldBroadcastEvent (0x12660c390) Restarting process from state: stopped
+ Process::PrivateResume() m_stop_id = 13, public state: running private state: stopped
+ WillResume Thread #1 (0x0x146678598): tid = 0x5b02, pc = 0x100003f24, sp = 0x16fdfed50, fp = 0x16fdfed70, plan = 'Step range stepping over', state = stepping, stop others = 1
+ (plugin = gdb-remote, state = running)
+ Process thinks the process has resumed.
+ Process::ShouldBroadcastEvent (0x12660c390) => new state: stopped, last broadcast state: running - NO
+ Process::HandlePrivateEvent (pid = 1960) suppressing state stopped (old state running): should_broadcast == false
+ timeout = <infinite>, event_sp)...
+ Process::ShouldBroadcastEvent (0x137a08650) => new state: running, last broadcast state: running - NO
+ Process::HandlePrivateEvent (pid = 1960) suppressing state running (old state running): should_broadcast == false
+ timeout = <infinite>, event_sp)...
+ (plugin = gdb-remote, state = stopped)
+ (plugin = gdb-remote, state = stopped, stop_id = 14
+ 0x146678598: tid = 0x5b02: stop info = <NULL> (stop_id = 14)
+ 0x146678598: tid = 0x5b02: stop info = trace (stop_id = 14)
+ 
+ ThreadList::ShouldStop: 1 threads, 1 unsuspended threads
+ Thread::ShouldStop(0x146678598) for tid = 0x5b02 0x5b02, pc = 0x0000000100003f28
+ ^^^^^^^^ Thread::ShouldStop Begin ^^^^^^^^
+ Plan stack initial state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+      Element 1: Stepping over line problem03.c:20:7 using ranges: [0x0000000100003f20-0x0000000100003f28).
+
+ ThreadPlanStepOverRange reached 0x0000000100003f28.
+ Step range plan out of range to 0x100003f28
+ ShouldStopHere callback returned 1 from 0x100003f28.
+ Plan Step range stepping over should stop: 1.
+ Completed step through range plan.
+ Popping plan: "Step range stepping over", tid = 0x5b02.
+ Plan stack final state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+    Completed plan stack:
+      Element 0: Stepping over line problem03.c:20:7 using ranges: [0x0000000100003f20-0x0000000100003f28).
+
+ vvvvvvvv Thread::ShouldStop End (returning 1) vvvvvvvv
+ ThreadList::ShouldStop overall should_stop = 1
+ Process::ShouldBroadcastEvent (0x137a08650) => new state: stopped, last broadcast state: stopped - YES
+ Process::HandlePrivateEvent (pid = 1960) broadcasting new state stopped (old state stopped) to public
+ timeout = <infinite>, event_sp)...
+ (plugin = gdb-remote, state = stopped, restarted = 0)
+ (plugin = gdb-remote, state = stopped) -- unlocking run lock
+ ThreadPlanStepOverRange reached 0x0000000100003f28.
+ Step range plan out of range to 0x100003f28
+ ShouldStopHere callback returned 1 from 0x100003f28.
+ Frame #0 not recognized
+ Processing command: n
+ HandleCommand, cmd_obj : 'thread step-over'
+ HandleCommand, (revised) command_string: 'thread step-over'
+ HandleCommand, wants_raw_input:'False'
+ HandleCommand, command line after removing command name(s): ''
+ SynthesizeTailCallFrames: can't find next function
+ Thread::PushPlan(0x0x146678598): "Stepping over line problem03.c:21:11.", tid = 0x5b02.
+ Target::AddBreakpoint (internal = yes) => break_id = -7: address = problem03[0x0000000100003f38]
+
+
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() add at addr = 0x100003f38
+ ThreadPlanStepRange::SetNextBranchBreakpoint - Setting breakpoint -7 (site 12) to run to address 0x100003f38
+ (plugin = gdb-remote) -- locking run lock
+ Process::PrivateResume() m_stop_id = 14, public state: stopped private state: stopped
+ WillResume Thread #1 (0x0x146678598): tid = 0x5b02, pc = 0x100003f28, sp = 0x16fdfed50, fp = 0x16fdfed70, plan = 'Step range stepping over', state = running, stop others = 0
+ (plugin = gdb-remote, state = running)
+ Current Plan for thread 1(0x146678598) (0x5b02, running): Step range stepping over being asked whether we should report run.
+ Process::ShouldBroadcastEvent (0x137a08da0) => new state: running, last broadcast state: running - YES
+ Process::HandlePrivateEvent (pid = 1960) broadcasting new state running (old state running) to public
+ Process::PushProcessIOHandler pushing IO handler
+ Process thinks the process has resumed.
+ Process::HandlePrivateEvent updated m_iohandler_sync to 4
+ waited from m_iohandler_sync to change from 3. New value is 4.
+ (plugin = gdb-remote, state = running, restarted = 0)
+ HandleCommand, command succeeded
+ timeout = <infinite>, event_sp)...
+ (plugin = gdb-remote, state = stopped)
+ (plugin = gdb-remote, state = stopped, stop_id = 15
+ 0x146678598: tid = 0x5b02: stop info = <NULL> (stop_id = 15)
+ 0x146678598: tid = 0x5b02: stop info = breakpoint 1.1 (stop_id = 15)
+ 
+ ThreadList::ShouldStop: 1 threads, 1 unsuspended threads
+ Thread::ShouldStop(0x146678598) for tid = 0x5b02 0x5b02, pc = 0x0000000100003e8c
+ ^^^^^^^^ Thread::ShouldStop Begin ^^^^^^^^
+ Plan stack initial state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+      Element 1: Stepping over line problem03.c:21:11 using ranges: [0x0000000100003f28-0x0000000100003f38).
+
+ Hit breakpoint location: 1.1: 
+  module = /Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set01/problem03
+  compile unit = problem03.c
+  function = add
+  location = /Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set01/problem03.c:11:9
+  address = 0x0000000100003e8c
+  resolved = true
+  hardware = false
+  hit count = 1   
+, stopping.
+
+ Plan base plan explains stop.
+ Base plan discarding thread plans for thread tid = 0x5b02 (breakpoint hit.)
+ Discarding thread plans for thread (tid = 0x5b02, force 0)
+ Plan stack final state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+      Element 1: Stepping over line problem03.c:21:11 using ranges: [0x0000000100003f28-0x0000000100003f38).
+
+ vvvvvvvv Thread::ShouldStop End (returning 1) vvvvvvvv
+ ThreadList::ShouldStop overall should_stop = 1
+ Process::ShouldBroadcastEvent (0x137a08da0) => new state: stopped, last broadcast state: stopped - YES
+ Process::HandlePrivateEvent (pid = 1960) broadcasting new state stopped (old state stopped) to public
+ timeout = <infinite>, event_sp)...
+ (plugin = gdb-remote, state = stopped, restarted = 0)
+ (plugin = gdb-remote, state = stopped) -- unlocking run lock
+ Process::PerformAction returning from action with m_should_stop: 1.
+ Frame #0 not recognized
+ Processing command: n
+ HandleCommand, cmd_obj : 'thread step-over'
+ HandleCommand, (revised) command_string: 'thread step-over'
+ HandleCommand, wants_raw_input:'False'
+ HandleCommand, command line after removing command name(s): ''
+ Finding frames between main and add, retn-pc=0x100003f34
+ No call edge outgoing from main with retn-PC == 0x100003f34
+ Thread::PushPlan(0x0x146678598): "Stepping over line problem03.c:11:9.", tid = 0x5b02.
+ Target::AddBreakpoint (internal = yes) => break_id = -8: address = problem03[0x0000000100003e9c]
+
+
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() add at addr = 0x100003e9c
+ ThreadPlanStepRange::SetNextBranchBreakpoint - Setting breakpoint -8 (site 13) to run to address 0x100003e9c
+ (plugin = gdb-remote) -- locking run lock
+ Process::PrivateResume() m_stop_id = 15, public state: stopped private state: stopped
+ Thread::PushPlan(0x0x146678598): "Single stepping past breakpoint site 6 at 0x100003e8c", tid = 0x5b02.
+ WillResume Thread #1 (0x0x146678598): tid = 0x5b02, pc = 0x100003e8c, sp = 0x16fdfed40, fp = 0x16fdfed70, plan = 'Step over breakpoint trap', state = stepping, stop others = 1
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() remove at addr = 0x100003e8c
+ (plugin = gdb-remote, state = running)
+ Current Plan for thread 1(0x146678598) (0x5b02, stepping): Step over breakpoint trap being asked whether we should report run.
+ Process thinks the process has resumed.
+ Process::ShouldBroadcastEvent (0x137b246c0) => new state: running, last broadcast state: running - YES
+ Process::HandlePrivateEvent (pid = 1960) broadcasting new state running (old state running) to public
+ Process::PushProcessIOHandler pushing IO handler
+ Process::HandlePrivateEvent updated m_iohandler_sync to 5
+ waited from m_iohandler_sync to change from 4. New value is 5.
+ HandleCommand, command succeeded
+ timeout = <infinite>, event_sp)...
+ (plugin = gdb-remote, state = running, restarted = 0)
+ (plugin = gdb-remote, state = stopped)
+ (plugin = gdb-remote, state = stopped, stop_id = 16
+ 0x146678598: tid = 0x5b02: stop info = <NULL> (stop_id = 16)
+ 0x146678598: tid = 0x5b02: stop info = trace (stop_id = 16)
+ 
+ ThreadList::ShouldStop: 1 threads, 1 unsuspended threads
+ Thread::ShouldStop(0x146678598) for tid = 0x5b02 0x5b02, pc = 0x0000000100003e90
+ ^^^^^^^^ Thread::ShouldStop Begin ^^^^^^^^
+ Plan stack initial state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+      Element 1: Stepping over line problem03.c:21:11 using ranges: [0x0000000100003f28-0x0000000100003f38).
+      Element 2: Stepping over line problem03.c:11:9 using ranges: [0x0000000100003e8c-0x0000000100003e9c).
+      Element 3: Single stepping past breakpoint site 6 at 0x100003e8c
+
+ Step over breakpoint stopped for reason: trace.
+ Plan Step over breakpoint trap should stop: 0.
+ Completed step over breakpoint plan.
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() add at addr = 0x100003e8c
+ Plan Step over breakpoint trap auto-continue: true.
+ Popping plan: "Step over breakpoint trap", tid = 0x5b02.
+ ThreadPlanStepOverRange reached 0x0000000100003e90.
+ Plan Step range stepping over should stop: 0.
+ Plan stack final state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+      Element 1: Stepping over line problem03.c:21:11 using ranges: [0x0000000100003f28-0x0000000100003f38).
+      Element 2: Stepping over line problem03.c:11:9 using ranges: [0x0000000100003e8c-0x0000000100003e9c).
+    Completed plan stack:
+      Element 0: Single stepping past breakpoint site 6 at 0x100003e8c
+
+ vvvvvvvv Thread::ShouldStop End (returning 0) vvvvvvvv
+ ThreadList::ShouldStop overall should_stop = 0
+ ThreadList::ShouldReportStop 1 threads
+ Thread::ShouldReportStop() tid = 0x5b02: returning vote for complete stack's back plan
+ Returning vote: no
+ Returning no
+ Process::ShouldBroadcastEvent: should_resume: 1 state: stopped was_restarted: 0 report_stop_vote: -1.
+ Process::ShouldBroadcastEvent (0x137a08650) Restarting process from state: stopped
+ Process::PrivateResume() m_stop_id = 16, public state: running private state: stopped
+ WillResume Thread #1 (0x0x146678598): tid = 0x5b02, pc = 0x100003e90, sp = 0x16fdfed40, fp = 0x16fdfed70, plan = 'Step range stepping over', state = running, stop others = 1
+ (plugin = gdb-remote, state = running)
+ Process thinks the process has resumed.
+ Process::ShouldBroadcastEvent (0x137a08650) => new state: stopped, last broadcast state: running - NO
+ Process::HandlePrivateEvent (pid = 1960) suppressing state stopped (old state running): should_broadcast == false
+ timeout = <infinite>, event_sp)...
+ Process::ShouldBroadcastEvent (0x137b258b0) => new state: running, last broadcast state: running - NO
+ Process::HandlePrivateEvent (pid = 1960) suppressing state running (old state running): should_broadcast == false
+ timeout = <infinite>, event_sp)...
+ (plugin = gdb-remote, state = stopped)
+ (plugin = gdb-remote, state = stopped, stop_id = 17
+ 0x146678598: tid = 0x5b02: stop info = <NULL> (stop_id = 17)
+ 0x146678598: tid = 0x5b02: stop info = next-branch-location (stop_id = 17)
+ 
+ ThreadList::ShouldStop: 1 threads, 1 unsuspended threads
+ Thread::ShouldStop(0x146678598) for tid = 0x5b02 0x5b02, pc = 0x0000000100003e9c
+ ^^^^^^^^ Thread::ShouldStop Begin ^^^^^^^^
+ Plan stack initial state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+      Element 1: Stepping over line problem03.c:21:11 using ranges: [0x0000000100003f28-0x0000000100003f38).
+      Element 2: Stepping over line problem03.c:11:9 using ranges: [0x0000000100003e8c-0x0000000100003e9c).
+
+ Hit breakpoint location: -8.1: 
+  module = /Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set01/problem03
+  compile unit = problem03.c
+  function = add
+  location = /Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set01/problem03.c:12:12
+  address = 0x0000000100003e9c
+  resolved = true
+  hardware = false
+  hit count = 1   
+, stopping.
+
+ ThreadPlanStepRange::NextRangeBreakpointExplainsStop - Hit next range breakpoint which has 1 owners - explains stop: 1.
+ Removing next branch breakpoint: -8.
+ Target::RemoveBreakpointByID (break_id = -8, internal = yes)
+
+ Target::DisableBreakpointByID (break_id = -8, internal = yes)
+
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() remove at addr = 0x100003e9c
+ ThreadPlanStepOverRange reached 0x0000000100003e9c.
+ Step range plan out of range to 0x100003e9c
+ ShouldStopHere callback returned 1 from 0x100003e9c.
+ Plan Step range stepping over should stop: 1.
+ Completed step through range plan.
+ Popping plan: "Step range stepping over", tid = 0x5b02.
+ Plan stack final state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+      Element 1: Stepping over line problem03.c:21:11 using ranges: [0x0000000100003f28-0x0000000100003f38).
+    Completed plan stack:
+      Element 0: Stepping over line problem03.c:11:9 using ranges: [0x0000000100003e8c-0x0000000100003e9c).
+
+ vvvvvvvv Thread::ShouldStop End (returning 1) vvvvvvvv
+ ThreadList::ShouldStop overall should_stop = 1
+ Process::ShouldBroadcastEvent (0x137b258b0) => new state: stopped, last broadcast state: stopped - YES
+ Process::HandlePrivateEvent (pid = 1960) broadcasting new state stopped (old state stopped) to public
+ timeout = <infinite>, event_sp)...
+ (plugin = gdb-remote, state = stopped, restarted = 0)
+ (plugin = gdb-remote, state = stopped) -- unlocking run lock
+ Process::PerformAction could not find breakpoint site id: 13...
+ 0x146678598: tid = 0x5b02: stop info = step over (stop_id = 17)
+ Process::PerformAction returning from action with m_should_stop: 1.
+ Frame #0 not recognized
+ Processing command: p c
+ HandleCommand, cmd_obj : 'dwim-print'
+ HandleCommand, (revised) command_string: 'dwim-print -- c'
+ HandleCommand, wants_raw_input:'True'
+ HandleCommand, command line after removing command name(s): '-- c'
+ HandleCommand, command succeeded
+ Processing command: n
+ HandleCommand, cmd_obj : 'thread step-over'
+ HandleCommand, (revised) command_string: 'thread step-over'
+ HandleCommand, wants_raw_input:'False'
+ HandleCommand, command line after removing command name(s): ''
+ Finding frames between main and add, retn-pc=0x100003f34
+ No call edge outgoing from main with retn-PC == 0x100003f34
+ Thread::PushPlan(0x0x146678598): "Stepping over line problem03.c:12:12.", tid = 0x5b02.
+ Target::AddBreakpoint (internal = yes) => break_id = -9: address = problem03[0x0000000100003ea4]
+
+
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() add at addr = 0x100003ea4
+ ThreadPlanStepRange::SetNextBranchBreakpoint - Setting breakpoint -9 (site 14) to run to address 0x100003ea4
+ (plugin = gdb-remote) -- locking run lock
+ Process::PrivateResume() m_stop_id = 17, public state: stopped private state: stopped
+ WillResume Thread #1 (0x0x146678598): tid = 0x5b02, pc = 0x100003e9c, sp = 0x16fdfed40, fp = 0x16fdfed70, plan = 'Step range stepping over', state = running, stop others = 1
+ (plugin = gdb-remote, state = running)
+ Current Plan for thread 1(0x146678598) (0x5b02, running): Step range stepping over being asked whether we should report run.
+ Process::ShouldBroadcastEvent (0x137a08650) => new state: running, last broadcast state: running - YES
+ Process::HandlePrivateEvent (pid = 1960) broadcasting new state running (old state running) to public
+ Process thinks the process has resumed.
+ Process::PushProcessIOHandler pushing IO handler
+ Process::HandlePrivateEvent updated m_iohandler_sync to 6
+ waited from m_iohandler_sync to change from 5. New value is 6.
+ (plugin = gdb-remote, state = running, restarted = 0)
+ HandleCommand, command succeeded
+ timeout = <infinite>, event_sp)...
+ (plugin = gdb-remote, state = stopped)
+ (plugin = gdb-remote, state = stopped, stop_id = 18
+ 0x146678598: tid = 0x5b02: stop info = <NULL> (stop_id = 18)
+ 0x146678598: tid = 0x5b02: stop info = next-branch-location (stop_id = 18)
+ 
+ ThreadList::ShouldStop: 1 threads, 1 unsuspended threads
+ Thread::ShouldStop(0x146678598) for tid = 0x5b02 0x5b02, pc = 0x0000000100003ea4
+ ^^^^^^^^ Thread::ShouldStop Begin ^^^^^^^^
+ Plan stack initial state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+      Element 1: Stepping over line problem03.c:21:11 using ranges: [0x0000000100003f28-0x0000000100003f38).
+      Element 2: Stepping over line problem03.c:12:12 using ranges: [0x0000000100003e9c-0x0000000100003ea8).
+
+ Hit breakpoint location: -9.1: 
+  module = /Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set01/problem03
+  compile unit = problem03.c
+  function = add
+  location = /Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set01/problem03.c:12:5
+  address = 0x0000000100003ea4
+  resolved = true
+  hardware = false
+  hit count = 1   
+, stopping.
+
+ ThreadPlanStepRange::NextRangeBreakpointExplainsStop - Hit next range breakpoint which has 1 owners - explains stop: 1.
+ Removing next branch breakpoint: -9.
+ Target::RemoveBreakpointByID (break_id = -9, internal = yes)
+
+ Target::DisableBreakpointByID (break_id = -9, internal = yes)
+
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() remove at addr = 0x100003ea4
+ ThreadPlanStepOverRange reached 0x0000000100003ea4.
+ Plan Step range stepping over should stop: 0.
+ Plan stack final state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+      Element 1: Stepping over line problem03.c:21:11 using ranges: [0x0000000100003f28-0x0000000100003f38).
+      Element 2: Stepping over line problem03.c:12:12 using ranges: [0x0000000100003e9c-0x0000000100003ea8).
+
+ vvvvvvvv Thread::ShouldStop End (returning 0) vvvvvvvv
+ ThreadList::ShouldStop overall should_stop = 0
+ ThreadList::ShouldReportStop 1 threads
+ ThreadPlanStepRange::ShouldReportStop() returning vote -1
+
+ Thread::ShouldReportStop() tid = 0x5b02: returning vote -1 for current plan
+ Returning no
+ Process::ShouldBroadcastEvent: should_resume: 1 state: stopped was_restarted: 0 report_stop_vote: -1.
+ Process::ShouldBroadcastEvent (0x1378099a0) Restarting process from state: stopped
+ Process::PrivateResume() m_stop_id = 18, public state: running private state: stopped
+ WillResume Thread #1 (0x0x146678598): tid = 0x5b02, pc = 0x100003ea4, sp = 0x16fdfed50, fp = 0x16fdfed70, plan = 'Step range stepping over', state = stepping, stop others = 1
+ (plugin = gdb-remote, state = running)
+ Process thinks the process has resumed.
+ Process::ShouldBroadcastEvent (0x1378099a0) => new state: stopped, last broadcast state: running - NO
+ Process::HandlePrivateEvent (pid = 1960) suppressing state stopped (old state running): should_broadcast == false
+ timeout = <infinite>, event_sp)...
+ Process::ShouldBroadcastEvent (0x137a0a680) => new state: running, last broadcast state: running - NO
+ Process::HandlePrivateEvent (pid = 1960) suppressing state running (old state running): should_broadcast == false
+ timeout = <infinite>, event_sp)...
+ (plugin = gdb-remote, state = stopped)
+ (plugin = gdb-remote, state = stopped, stop_id = 19
+ 0x146678598: tid = 0x5b02: stop info = <NULL> (stop_id = 19)
+ 0x146678598: tid = 0x5b02: stop info = trace (stop_id = 19)
+ 
+ ThreadList::ShouldStop: 1 threads, 1 unsuspended threads
+ Thread::ShouldStop(0x146678598) for tid = 0x5b02 0x5b02, pc = 0x0000000100003f34
+ ^^^^^^^^ Thread::ShouldStop Begin ^^^^^^^^
+ Plan stack initial state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+      Element 1: Stepping over line problem03.c:21:11 using ranges: [0x0000000100003f28-0x0000000100003f38).
+      Element 2: Stepping over line problem03.c:12:12 using ranges: [0x0000000100003e9c-0x0000000100003ea8).
+
+ ThreadPlanStepOverRange reached 0x0000000100003f34.
+ SynthesizeTailCallFrames: can't find next function
+ Couldn't find step through plan from address 0x100003f34.
+ ShouldStopHere callback returned 1 from 0x100003f34.
+ Plan Step range stepping over should stop: 1.
+ Completed step through range plan.
+ Popping plan: "Step range stepping over", tid = 0x5b02.
+ Plan stack final state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+      Element 1: Stepping over line problem03.c:21:11 using ranges: [0x0000000100003f28-0x0000000100003f38).
+    Completed plan stack:
+      Element 0: Stepping over line problem03.c:12:12 using ranges: [0x0000000100003e9c-0x0000000100003ea8).
+
+ vvvvvvvv Thread::ShouldStop End (returning 1) vvvvvvvv
+ ThreadList::ShouldStop overall should_stop = 1
+ Process::ShouldBroadcastEvent (0x137a0a680) => new state: stopped, last broadcast state: stopped - YES
+ Process::HandlePrivateEvent (pid = 1960) broadcasting new state stopped (old state stopped) to public
+ timeout = <infinite>, event_sp)...
+ (plugin = gdb-remote, state = stopped, restarted = 0)
+ (plugin = gdb-remote, state = stopped) -- unlocking run lock
+ ThreadPlanStepOverRange reached 0x0000000100003f34.
+ Couldn't find step through plan from address 0x100003f34.
+ ShouldStopHere callback returned 1 from 0x100003f34.
+ Frame #0 not recognized
+ Processing command: n
+ HandleCommand, cmd_obj : 'thread step-over'
+ HandleCommand, (revised) command_string: 'thread step-over'
+ HandleCommand, wants_raw_input:'False'
+ HandleCommand, command line after removing command name(s): ''
+ Thread::PushPlan(0x0x146678598): "Stepping over line problem03.c:21:6.", tid = 0x5b02.
+ (plugin = gdb-remote) -- locking run lock
+ Process::PrivateResume() m_stop_id = 19, public state: stopped private state: stopped
+ WillResume Thread #1 (0x0x146678598): tid = 0x5b02, pc = 0x100003f34, sp = 0x16fdfed50, fp = 0x16fdfed70, plan = 'Step range stepping over', state = stepping, stop others = 1
+ (plugin = gdb-remote, state = running)
+ Current Plan for thread 1(0x146678598) (0x5b02, stepping): Step range stepping over being asked whether we should report run.
+ Process::ShouldBroadcastEvent (0x12660f1a0) => new state: running, last broadcast state: running - YES
+ Process::HandlePrivateEvent (pid = 1960) broadcasting new state running (old state running) to public
+ Process::PushProcessIOHandler pushing IO handler
+ Process thinks the process has resumed.
+ waited from m_iohandler_sync to change from 6. New value is 7.
+ HandleCommand, command succeeded
+ Process::HandlePrivateEvent updated m_iohandler_sync to 7
+ timeout = <infinite>, event_sp)...
+ (plugin = gdb-remote, state = running, restarted = 0)
+ (plugin = gdb-remote, state = stopped)
+ (plugin = gdb-remote, state = stopped, stop_id = 20
+ 0x146678598: tid = 0x5b02: stop info = <NULL> (stop_id = 20)
+ 0x146678598: tid = 0x5b02: stop info = next-branch-location (stop_id = 20)
+ 
+ ThreadList::ShouldStop: 1 threads, 1 unsuspended threads
+ Thread::ShouldStop(0x146678598) for tid = 0x5b02 0x5b02, pc = 0x0000000100003f38
+ ^^^^^^^^ Thread::ShouldStop Begin ^^^^^^^^
+ Plan stack initial state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+      Element 1: Stepping over line problem03.c:21:11 using ranges: [0x0000000100003f28-0x0000000100003f38).
+      Element 2: Stepping over line problem03.c:21:6 using ranges: [0x0000000100003f34-0x0000000100003f38).
+
+ Hit breakpoint location: -7.1: 
+  module = /Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set01/problem03
+  compile unit = problem03.c
+  function = main
+  location = /Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set01/problem03.c:22:12
+  address = 0x0000000100003f38
+  resolved = true
+  hardware = false
+  hit count = 1   
+, stopping.
+
+ ThreadPlanStepRange::NextRangeBreakpointExplainsStop - Hit next range breakpoint which has 1 owners - explains stop: 1.
+ Removing next branch breakpoint: -7.
+ Target::RemoveBreakpointByID (break_id = -7, internal = yes)
+
+ Target::DisableBreakpointByID (break_id = -7, internal = yes)
+
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() remove at addr = 0x100003f38
+ Plan Step range stepping over explains stop.
+ ThreadPlanStepOverRange reached 0x0000000100003f38.
+ Step range plan out of range to 0x100003f38
+ ShouldStopHere callback returned 1 from 0x100003f38.
+ Completed step through range plan.
+ Popping plan: "Step range stepping over", tid = 0x5b02.
+ Popping plan: "Step range stepping over", tid = 0x5b02.
+ Plan stack final state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+    Completed plan stack:
+      Element 0: Stepping over line problem03.c:21:6 using ranges: [0x0000000100003f34-0x0000000100003f38).
+      Element 1: Stepping over line problem03.c:21:11 using ranges: [0x0000000100003f28-0x0000000100003f38).
+
+ vvvvvvvv Thread::ShouldStop End (returning 1) vvvvvvvv
+ ThreadList::ShouldStop overall should_stop = 1
+ Process::ShouldBroadcastEvent (0x12660f1a0) => new state: stopped, last broadcast state: stopped - YES
+ Process::HandlePrivateEvent (pid = 1960) broadcasting new state stopped (old state stopped) to public
+ timeout = <infinite>, event_sp)...
+ (plugin = gdb-remote, state = stopped, restarted = 0)
+ (plugin = gdb-remote, state = stopped) -- unlocking run lock
+ Process::PerformAction could not find breakpoint site id: 12...
+ 0x146678598: tid = 0x5b02: stop info = step over (stop_id = 20)
+ Process::PerformAction returning from action with m_should_stop: 1.
+ Frame #0 not recognized
+ Processing command: n
+ HandleCommand, cmd_obj : 'thread step-over'
+ HandleCommand, (revised) command_string: 'thread step-over'
+ HandleCommand, wants_raw_input:'False'
+ HandleCommand, command line after removing command name(s): ''
+ SynthesizeTailCallFrames: can't find next function
+ Thread::PushPlan(0x0x146678598): "Stepping over line problem03.c:22:12.", tid = 0x5b02.
+ Target::AddBreakpoint (internal = yes) => break_id = -10: address = problem03[0x0000000100003f4c]
+
+
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() add at addr = 0x100003f4c
+ ThreadPlanStepRange::SetNextBranchBreakpoint - Setting breakpoint -10 (site 15) to run to address 0x100003f4c
+ (plugin = gdb-remote) -- locking run lock
+ Process::PrivateResume() m_stop_id = 20, public state: stopped private state: stopped
+ WillResume Thread #1 (0x0x146678598): tid = 0x5b02, pc = 0x100003f38, sp = 0x16fdfed50, fp = 0x16fdfed70, plan = 'Step range stepping over', state = running, stop others = 0
+ (plugin = gdb-remote, state = running)
+ Current Plan for thread 1(0x146678598) (0x5b02, running): Step range stepping over being asked whether we should report run.
+ Process::ShouldBroadcastEvent (0x1466e4b70) => new state: running, last broadcast state: running - YES
+ Process::HandlePrivateEvent (pid = 1960) broadcasting new state running (old state running) to public
+ Process::PushProcessIOHandler pushing IO handler
+ Process thinks the process has resumed.
+ Process::HandlePrivateEvent updated m_iohandler_sync to 8
+ waited from m_iohandler_sync to change from 7. New value is 8.
+ timeout = <infinite>, event_sp)...
+ HandleCommand, command succeeded
+ (plugin = gdb-remote, state = running, restarted = 0)
+ (plugin = gdb-remote, state = stopped)
+ (plugin = gdb-remote, state = stopped, stop_id = 21
+ 0x146678598: tid = 0x5b02: stop info = <NULL> (stop_id = 21)
+ 0x146678598: tid = 0x5b02: stop info = breakpoint 2.1 (stop_id = 21)
+ 
+ ThreadList::ShouldStop: 1 threads, 1 unsuspended threads
+ Thread::ShouldStop(0x146678598) for tid = 0x5b02 0x5b02, pc = 0x0000000100003ec0
+ ^^^^^^^^ Thread::ShouldStop Begin ^^^^^^^^
+ Plan stack initial state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+      Element 1: Stepping over line problem03.c:22:12 using ranges: [0x0000000100003f38-0x0000000100003f4c).
+
+ Hit breakpoint location: 2.1: 
+  module = /Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set01/problem03
+  compile unit = problem03.c
+  function = output
+  location = /Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set01/problem03.c:15:38
+  address = 0x0000000100003ec0
+  resolved = true
+  hardware = false
+  hit count = 1   
+, stopping.
+
+ Plan base plan explains stop.
+ Base plan discarding thread plans for thread tid = 0x5b02 (breakpoint hit.)
+ Discarding thread plans for thread (tid = 0x5b02, force 0)
+ Plan stack final state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+      Element 1: Stepping over line problem03.c:22:12 using ranges: [0x0000000100003f38-0x0000000100003f4c).
+
+ vvvvvvvv Thread::ShouldStop End (returning 1) vvvvvvvv
+ ThreadList::ShouldStop overall should_stop = 1
+ Process::ShouldBroadcastEvent (0x137c28170) => new state: stopped, last broadcast state: stopped - YES
+ Process::HandlePrivateEvent (pid = 1960) broadcasting new state stopped (old state stopped) to public
+ timeout = <infinite>, event_sp)...
+ (plugin = gdb-remote, state = stopped, restarted = 0)
+ (plugin = gdb-remote, state = stopped) -- unlocking run lock
+ Process::PerformAction returning from action with m_should_stop: 1.
+ Frame #0 not recognized
+ Processing command: n
+ HandleCommand, cmd_obj : 'thread step-over'
+ HandleCommand, (revised) command_string: 'thread step-over'
+ HandleCommand, wants_raw_input:'False'
+ HandleCommand, command line after removing command name(s): ''
+ Finding frames between main and output, retn-pc=0x100003f48
+ No call edge outgoing from main with retn-PC == 0x100003f48
+ Thread::PushPlan(0x0x146678598): "Stepping over line problem03.c:15:38.", tid = 0x5b02.
+ Target::AddBreakpoint (internal = yes) => break_id = -11: address = problem03[0x0000000100003ef4]
+
+
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() add at addr = 0x100003ef4
+ ThreadPlanStepRange::SetNextBranchBreakpoint - Setting breakpoint -11 (site 16) to run to address 0x100003ef4
+ (plugin = gdb-remote) -- locking run lock
+ Process::PrivateResume() m_stop_id = 21, public state: stopped private state: stopped
+ Thread::PushPlan(0x0x146678598): "Single stepping past breakpoint site 7 at 0x100003ec0", tid = 0x5b02.
+ WillResume Thread #1 (0x0x146678598): tid = 0x5b02, pc = 0x100003ec0, sp = 0x16fdfed10, fp = 0x16fdfed40, plan = 'Step over breakpoint trap', state = stepping, stop others = 1
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() remove at addr = 0x100003ec0
+ (plugin = gdb-remote, state = running)
+ Current Plan for thread 1(0x146678598) (0x5b02, stepping): Step over breakpoint trap being asked whether we should report run.
+ Process::ShouldBroadcastEvent (0x137a0b880) => new state: running, last broadcast state: running - YES
+ Process::HandlePrivateEvent (pid = 1960) broadcasting new state running (old state running) to public
+ Process::PushProcessIOHandler pushing IO handler
+ Process thinks the process has resumed.
+ Process::HandlePrivateEvent updated m_iohandler_sync to 9
+ waited from m_iohandler_sync to change from 8. New value is 9.
+ (plugin = gdb-remote, state = running, restarted = 0)
+ timeout = <infinite>, event_sp)...
+ HandleCommand, command succeeded
+ (plugin = gdb-remote, state = stopped)
+ (plugin = gdb-remote, state = stopped, stop_id = 22
+ 0x146678598: tid = 0x5b02: stop info = <NULL> (stop_id = 22)
+ 0x146678598: tid = 0x5b02: stop info = trace (stop_id = 22)
+ 
+ ThreadList::ShouldStop: 1 threads, 1 unsuspended threads
+ Thread::ShouldStop(0x146678598) for tid = 0x5b02 0x5b02, pc = 0x0000000100003ec4
+ ^^^^^^^^ Thread::ShouldStop Begin ^^^^^^^^
+ Plan stack initial state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+      Element 1: Stepping over line problem03.c:22:12 using ranges: [0x0000000100003f38-0x0000000100003f4c).
+      Element 2: Stepping over line problem03.c:15:38 using ranges: [0x0000000100003ec0-0x0000000100003ef4).
+      Element 3: Single stepping past breakpoint site 7 at 0x100003ec0
+
+ Step over breakpoint stopped for reason: trace.
+ Plan Step over breakpoint trap should stop: 0.
+ Completed step over breakpoint plan.
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() add at addr = 0x100003ec0
+ Plan Step over breakpoint trap auto-continue: true.
+ Popping plan: "Step over breakpoint trap", tid = 0x5b02.
+ ThreadPlanStepOverRange reached 0x0000000100003ec4.
+ Plan Step range stepping over should stop: 0.
+ Plan stack final state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+      Element 1: Stepping over line problem03.c:22:12 using ranges: [0x0000000100003f38-0x0000000100003f4c).
+      Element 2: Stepping over line problem03.c:15:38 using ranges: [0x0000000100003ec0-0x0000000100003ef4).
+    Completed plan stack:
+      Element 0: Single stepping past breakpoint site 7 at 0x100003ec0
+
+ vvvvvvvv Thread::ShouldStop End (returning 0) vvvvvvvv
+ ThreadList::ShouldStop overall should_stop = 0
+ ThreadList::ShouldReportStop 1 threads
+ Thread::ShouldReportStop() tid = 0x5b02: returning vote for complete stack's back plan
+ Returning vote: no
+ Returning no
+ Process::ShouldBroadcastEvent: should_resume: 1 state: stopped was_restarted: 0 report_stop_vote: -1.
+ Process::ShouldBroadcastEvent (0x137a0b880) Restarting process from state: stopped
+ Process::PrivateResume() m_stop_id = 22, public state: running private state: stopped
+ WillResume Thread #1 (0x0x146678598): tid = 0x5b02, pc = 0x100003ec4, sp = 0x16fdfed10, fp = 0x16fdfed40, plan = 'Step range stepping over', state = running, stop others = 0
+ (plugin = gdb-remote, state = running)
+ Process thinks the process has resumed.
+ Process::ShouldBroadcastEvent (0x137a0b880) => new state: stopped, last broadcast state: running - NO
+ Process::HandlePrivateEvent (pid = 1960) suppressing state stopped (old state running): should_broadcast == false
+ timeout = <infinite>, event_sp)...
+ Process::ShouldBroadcastEvent (0x137a0a490) => new state: running, last broadcast state: running - NO
+ Process::HandlePrivateEvent (pid = 1960) suppressing state running (old state running): should_broadcast == false
+ timeout = <infinite>, event_sp)...
+ (plugin = gdb-remote, state = stopped)
+ (plugin = gdb-remote, state = stopped, stop_id = 23
+ 0x146678598: tid = 0x5b02: stop info = <NULL> (stop_id = 23)
+ 0x146678598: tid = 0x5b02: stop info = next-branch-location (stop_id = 23)
+ 
+ ThreadList::ShouldStop: 1 threads, 1 unsuspended threads
+ Thread::ShouldStop(0x146678598) for tid = 0x5b02 0x5b02, pc = 0x0000000100003ef4
+ ^^^^^^^^ Thread::ShouldStop Begin ^^^^^^^^
+ Plan stack initial state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+      Element 1: Stepping over line problem03.c:22:12 using ranges: [0x0000000100003f38-0x0000000100003f4c).
+      Element 2: Stepping over line problem03.c:15:38 using ranges: [0x0000000100003ec0-0x0000000100003ef4).
+
+ Hit breakpoint location: -11.1: 
+  module = /Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set01/problem03
+  compile unit = problem03.c
+  function = output
+  location = /Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set01/problem03.c:16:1
+  address = 0x0000000100003ef4
+  resolved = true
+  hardware = false
+  hit count = 1   
+, stopping.
+
+ ThreadPlanStepRange::NextRangeBreakpointExplainsStop - Hit next range breakpoint which has 1 owners - explains stop: 1.
+ Removing next branch breakpoint: -11.
+ Target::RemoveBreakpointByID (break_id = -11, internal = yes)
+
+ Target::DisableBreakpointByID (break_id = -11, internal = yes)
+
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() remove at addr = 0x100003ef4
+ ThreadPlanStepOverRange reached 0x0000000100003ef4.
+ Step range plan out of range to 0x100003ef4
+ ShouldStopHere callback returned 1 from 0x100003ef4.
+ Plan Step range stepping over should stop: 1.
+ Completed step through range plan.
+ Popping plan: "Step range stepping over", tid = 0x5b02.
+ Plan stack final state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+      Element 1: Stepping over line problem03.c:22:12 using ranges: [0x0000000100003f38-0x0000000100003f4c).
+    Completed plan stack:
+      Element 0: Stepping over line problem03.c:15:38 using ranges: [0x0000000100003ec0-0x0000000100003ef4).
+
+ vvvvvvvv Thread::ShouldStop End (returning 1) vvvvvvvv
+ ThreadList::ShouldStop overall should_stop = 1
+ Process::ShouldBroadcastEvent (0x137807e90) => new state: stopped, last broadcast state: stopped - YES
+ Process::HandlePrivateEvent (pid = 1960) broadcasting new state stopped (old state stopped) to public
+ timeout = <infinite>, event_sp)...
+ (plugin = gdb-remote, state = stopped, restarted = 0)
+ (plugin = gdb-remote, state = stopped) -- unlocking run lock
+ Process::PerformAction could not find breakpoint site id: 16...
+ 0x146678598: tid = 0x5b02: stop info = step over (stop_id = 23)
+ Process::PerformAction returning from action with m_should_stop: 1.
+ Frame #0 not recognized
+ Processing command: n
+ HandleCommand, cmd_obj : 'thread step-over'
+ HandleCommand, (revised) command_string: 'thread step-over'
+ HandleCommand, wants_raw_input:'False'
+ HandleCommand, command line after removing command name(s): ''
+ Finding frames between main and output, retn-pc=0x100003f48
+ No call edge outgoing from main with retn-PC == 0x100003f48
+ Thread::PushPlan(0x0x146678598): "Stepping over line problem03.c:16:1.", tid = 0x5b02.
+ Target::AddBreakpoint (internal = yes) => break_id = -12: address = problem03[0x0000000100003efc]
+
+
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() add at addr = 0x100003efc
+ ThreadPlanStepRange::SetNextBranchBreakpoint - Setting breakpoint -12 (site 17) to run to address 0x100003efc
+ (plugin = gdb-remote) -- locking run lock
+ Process::PrivateResume() m_stop_id = 23, public state: stopped private state: stopped
+ WillResume Thread #1 (0x0x146678598): tid = 0x5b02, pc = 0x100003ef4, sp = 0x16fdfed10, fp = 0x16fdfed40, plan = 'Step range stepping over', state = running, stop others = 1
+ (plugin = gdb-remote, state = running)
+ Current Plan for thread 1(0x146678598) (0x5b02, running): Step range stepping over being asked whether we should report run.
+ Process::ShouldBroadcastEvent (0x1466e4e00) => new state: running, last broadcast state: running - YES
+ Process::HandlePrivateEvent (pid = 1960) broadcasting new state running (old state running) to public
+ Process::PushProcessIOHandler pushing IO handler
+ Process::HandlePrivateEvent updated m_iohandler_sync to 10
+ timeout = <infinite>, event_sp)...
+ Process thinks the process has resumed.
+ waited from m_iohandler_sync to change from 9. New value is 10.
+ HandleCommand, command succeeded
+ (plugin = gdb-remote, state = running, restarted = 0)
+ (plugin = gdb-remote, state = stopped)
+ (plugin = gdb-remote, state = stopped, stop_id = 24
+ 0x146678598: tid = 0x5b02: stop info = <NULL> (stop_id = 24)
+ 0x146678598: tid = 0x5b02: stop info = next-branch-location (stop_id = 24)
+ 
+ ThreadList::ShouldStop: 1 threads, 1 unsuspended threads
+ Thread::ShouldStop(0x146678598) for tid = 0x5b02 0x5b02, pc = 0x0000000100003efc
+ ^^^^^^^^ Thread::ShouldStop Begin ^^^^^^^^
+ Plan stack initial state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+      Element 1: Stepping over line problem03.c:22:12 using ranges: [0x0000000100003f38-0x0000000100003f4c).
+      Element 2: Stepping over line problem03.c:16:1 using ranges: [0x0000000100003ef4-0x0000000100003f00).
+
+ Hit breakpoint location: -12.1: 
+  module = /Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set01/problem03
+  compile unit = problem03.c
+  function = output
+  location = /Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set01/problem03.c:16:1
+  address = 0x0000000100003efc
+  resolved = true
+  hardware = false
+  hit count = 1   
+, stopping.
+
+ ThreadPlanStepRange::NextRangeBreakpointExplainsStop - Hit next range breakpoint which has 1 owners - explains stop: 1.
+ Removing next branch breakpoint: -12.
+ Target::RemoveBreakpointByID (break_id = -12, internal = yes)
+
+ Target::DisableBreakpointByID (break_id = -12, internal = yes)
+
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() remove at addr = 0x100003efc
+ ThreadPlanStepOverRange reached 0x0000000100003efc.
+ Plan Step range stepping over should stop: 0.
+ Plan stack final state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+      Element 1: Stepping over line problem03.c:22:12 using ranges: [0x0000000100003f38-0x0000000100003f4c).
+      Element 2: Stepping over line problem03.c:16:1 using ranges: [0x0000000100003ef4-0x0000000100003f00).
+
+ vvvvvvvv Thread::ShouldStop End (returning 0) vvvvvvvv
+ ThreadList::ShouldStop overall should_stop = 0
+ ThreadList::ShouldReportStop 1 threads
+ ThreadPlanStepRange::ShouldReportStop() returning vote -1
+
+ Thread::ShouldReportStop() tid = 0x5b02: returning vote -1 for current plan
+ Returning no
+ Process::ShouldBroadcastEvent: should_resume: 1 state: stopped was_restarted: 0 report_stop_vote: -1.
+ Process::ShouldBroadcastEvent (0x1379090f0) Restarting process from state: stopped
+ Process::PrivateResume() m_stop_id = 24, public state: running private state: stopped
+ WillResume Thread #1 (0x0x146678598): tid = 0x5b02, pc = 0x100003efc, sp = 0x16fdfed50, fp = 0x16fdfed70, plan = 'Step range stepping over', state = stepping, stop others = 1
+ (plugin = gdb-remote, state = running)
+ Process thinks the process has resumed.
+ Process::ShouldBroadcastEvent (0x1379090f0) => new state: stopped, last broadcast state: running - NO
+ Process::HandlePrivateEvent (pid = 1960) suppressing state stopped (old state running): should_broadcast == false
+ timeout = <infinite>, event_sp)...
+ Process::ShouldBroadcastEvent (0x137b04b90) => new state: running, last broadcast state: running - NO
+ Process::HandlePrivateEvent (pid = 1960) suppressing state running (old state running): should_broadcast == false
+ timeout = <infinite>, event_sp)...
+ (plugin = gdb-remote, state = stopped)
+ (plugin = gdb-remote, state = stopped, stop_id = 25
+ 0x146678598: tid = 0x5b02: stop info = <NULL> (stop_id = 25)
+ 0x146678598: tid = 0x5b02: stop info = trace (stop_id = 25)
+ 
+ ThreadList::ShouldStop: 1 threads, 1 unsuspended threads
+ Thread::ShouldStop(0x146678598) for tid = 0x5b02 0x5b02, pc = 0x0000000100003f48
+ ^^^^^^^^ Thread::ShouldStop Begin ^^^^^^^^
+ Plan stack initial state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+      Element 1: Stepping over line problem03.c:22:12 using ranges: [0x0000000100003f38-0x0000000100003f4c).
+      Element 2: Stepping over line problem03.c:16:1 using ranges: [0x0000000100003ef4-0x0000000100003f00).
+
+ ThreadPlanStepOverRange reached 0x0000000100003f48.
+ SynthesizeTailCallFrames: can't find next function
+ Couldn't find step through plan from address 0x100003f48.
+ ShouldStopHere callback returned 1 from 0x100003f48.
+ Plan Step range stepping over should stop: 1.
+ Completed step through range plan.
+ Popping plan: "Step range stepping over", tid = 0x5b02.
+ Plan stack final state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+      Element 1: Stepping over line problem03.c:22:12 using ranges: [0x0000000100003f38-0x0000000100003f4c).
+    Completed plan stack:
+      Element 0: Stepping over line problem03.c:16:1 using ranges: [0x0000000100003ef4-0x0000000100003f00).
+
+ vvvvvvvv Thread::ShouldStop End (returning 1) vvvvvvvv
+ ThreadList::ShouldStop overall should_stop = 1
+ Process::ShouldBroadcastEvent (0x13660ad30) => new state: stopped, last broadcast state: stopped - YES
+ Process::HandlePrivateEvent (pid = 1960) broadcasting new state stopped (old state stopped) to public
+ timeout = <infinite>, event_sp)...
+ (plugin = gdb-remote, state = stopped, restarted = 0)
+ (plugin = gdb-remote, state = stopped) -- unlocking run lock
+ ThreadPlanStepOverRange reached 0x0000000100003f48.
+ Couldn't find step through plan from address 0x100003f48.
+ ShouldStopHere callback returned 1 from 0x100003f48.
+ Frame #0 not recognized
+ Processing command: n
+ HandleCommand, cmd_obj : 'thread step-over'
+ HandleCommand, (revised) command_string: 'thread step-over'
+ HandleCommand, wants_raw_input:'False'
+ HandleCommand, command line after removing command name(s): ''
+ Thread::PushPlan(0x0x146678598): "Stepping over line problem03.c:22:5.", tid = 0x5b02.
+ (plugin = gdb-remote) -- locking run lock
+ Process::PrivateResume() m_stop_id = 25, public state: stopped private state: stopped
+ WillResume Thread #1 (0x0x146678598): tid = 0x5b02, pc = 0x100003f48, sp = 0x16fdfed50, fp = 0x16fdfed70, plan = 'Step range stepping over', state = stepping, stop others = 1
+ (plugin = gdb-remote, state = running)
+ Current Plan for thread 1(0x146678598) (0x5b02, stepping): Step range stepping over being asked whether we should report run.
+ Process::ShouldBroadcastEvent (0x1266105b0) => new state: running, last broadcast state: running - YES
+ Process::HandlePrivateEvent (pid = 1960) broadcasting new state running (old state running) to public
+ Process::PushProcessIOHandler pushing IO handler
+ Process thinks the process has resumed.
+ Process::HandlePrivateEvent updated m_iohandler_sync to 11
+ waited from m_iohandler_sync to change from 10. New value is 11.
+ (plugin = gdb-remote, state = running, restarted = 0)
+ HandleCommand, command succeeded
+ timeout = <infinite>, event_sp)...
+ (plugin = gdb-remote, state = stopped)
+ (plugin = gdb-remote, state = stopped, stop_id = 26
+ 0x146678598: tid = 0x5b02: stop info = <NULL> (stop_id = 26)
+ 0x146678598: tid = 0x5b02: stop info = next-branch-location (stop_id = 26)
+ 
+ ThreadList::ShouldStop: 1 threads, 1 unsuspended threads
+ Thread::ShouldStop(0x146678598) for tid = 0x5b02 0x5b02, pc = 0x0000000100003f4c
+ ^^^^^^^^ Thread::ShouldStop Begin ^^^^^^^^
+ Plan stack initial state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+      Element 1: Stepping over line problem03.c:22:12 using ranges: [0x0000000100003f38-0x0000000100003f4c).
+      Element 2: Stepping over line problem03.c:22:5 using ranges: [0x0000000100003f44-0x0000000100003f4c).
+
+ Hit breakpoint location: -10.1: 
+  module = /Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set01/problem03
+  compile unit = problem03.c
+  function = main
+  location = /Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set01/problem03.c:23:5
+  address = 0x0000000100003f4c
+  resolved = true
+  hardware = false
+  hit count = 1   
+, stopping.
+
+ ThreadPlanStepRange::NextRangeBreakpointExplainsStop - Hit next range breakpoint which has 1 owners - explains stop: 1.
+ Removing next branch breakpoint: -10.
+ Target::RemoveBreakpointByID (break_id = -10, internal = yes)
+
+ Target::DisableBreakpointByID (break_id = -10, internal = yes)
+
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() remove at addr = 0x100003f4c
+ Plan Step range stepping over explains stop.
+ ThreadPlanStepOverRange reached 0x0000000100003f4c.
+ Step range plan out of range to 0x100003f4c
+ ShouldStopHere callback returned 1 from 0x100003f4c.
+ Completed step through range plan.
+ Popping plan: "Step range stepping over", tid = 0x5b02.
+ Popping plan: "Step range stepping over", tid = 0x5b02.
+ Plan stack final state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+    Completed plan stack:
+      Element 0: Stepping over line problem03.c:22:5 using ranges: [0x0000000100003f44-0x0000000100003f4c).
+      Element 1: Stepping over line problem03.c:22:12 using ranges: [0x0000000100003f38-0x0000000100003f4c).
+
+ vvvvvvvv Thread::ShouldStop End (returning 1) vvvvvvvv
+ ThreadList::ShouldStop overall should_stop = 1
+ Process::ShouldBroadcastEvent (0x1266105b0) => new state: stopped, last broadcast state: stopped - YES
+ Process::HandlePrivateEvent (pid = 1960) broadcasting new state stopped (old state stopped) to public
+ timeout = <infinite>, event_sp)...
+ (plugin = gdb-remote, state = stopped, restarted = 0)
+ (plugin = gdb-remote, state = stopped) -- unlocking run lock
+ Process::PerformAction could not find breakpoint site id: 15...
+ 0x146678598: tid = 0x5b02: stop info = step over (stop_id = 26)
+ Process::PerformAction returning from action with m_should_stop: 1.
+ Frame #0 not recognized
+ Processing command: n
+ HandleCommand, cmd_obj : 'thread step-over'
+ HandleCommand, (revised) command_string: 'thread step-over'
+ HandleCommand, wants_raw_input:'False'
+ HandleCommand, command line after removing command name(s): ''
+ SynthesizeTailCallFrames: can't find next function
+ Thread::PushPlan(0x0x146678598): "Stepping over line problem03.c:23:5.", tid = 0x5b02.
+ Target::AddBreakpoint (internal = yes) => break_id = -13: address = problem03[0x0000000100003f54]
+
+
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() add at addr = 0x100003f54
+ ThreadPlanStepRange::SetNextBranchBreakpoint - Setting breakpoint -13 (site 18) to run to address 0x100003f54
+ (plugin = gdb-remote) -- locking run lock
+ Process::PrivateResume() m_stop_id = 26, public state: stopped private state: stopped
+ WillResume Thread #1 (0x0x146678598): tid = 0x5b02, pc = 0x100003f4c, sp = 0x16fdfed50, fp = 0x16fdfed70, plan = 'Step range stepping over', state = running, stop others = 1
+ (plugin = gdb-remote, state = running)
+ Current Plan for thread 1(0x146678598) (0x5b02, running): Step range stepping over being asked whether we should report run.
+ Process::ShouldBroadcastEvent (0x126611f20) => new state: running, last broadcast state: running - YES
+ Process::HandlePrivateEvent (pid = 1960) broadcasting new state running (old state running) to public
+ Process::PushProcessIOHandler pushing IO handler
+ Process thinks the process has resumed.
+ Process::HandlePrivateEvent updated m_iohandler_sync to 12
+ waited from m_iohandler_sync to change from 11. New value is 12.
+ timeout = <infinite>, event_sp)...
+ (plugin = gdb-remote, state = running, restarted = 0)
+ HandleCommand, command succeeded
+ (plugin = gdb-remote, state = stopped)
+ (plugin = gdb-remote, state = stopped, stop_id = 27
+ 0x146678598: tid = 0x5b02: stop info = <NULL> (stop_id = 27)
+ 0x146678598: tid = 0x5b02: stop info = next-branch-location (stop_id = 27)
+ 
+ ThreadList::ShouldStop: 1 threads, 1 unsuspended threads
+ Thread::ShouldStop(0x146678598) for tid = 0x5b02 0x5b02, pc = 0x0000000100003f54
+ ^^^^^^^^ Thread::ShouldStop Begin ^^^^^^^^
+ Plan stack initial state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+      Element 1: Stepping over line problem03.c:23:5 using ranges: [0x0000000100003f4c-0x0000000100003f58).
+
+ Hit breakpoint location: -13.1: 
+  module = /Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set01/problem03
+  compile unit = problem03.c
+  function = main
+  location = /Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set01/problem03.c:23:5
+  address = 0x0000000100003f54
+  resolved = true
+  hardware = false
+  hit count = 1   
+, stopping.
+
+ ThreadPlanStepRange::NextRangeBreakpointExplainsStop - Hit next range breakpoint which has 1 owners - explains stop: 1.
+ Removing next branch breakpoint: -13.
+ Target::RemoveBreakpointByID (break_id = -13, internal = yes)
+
+ Target::DisableBreakpointByID (break_id = -13, internal = yes)
+
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() remove at addr = 0x100003f54
+ ThreadPlanStepOverRange reached 0x0000000100003f54.
+ Plan Step range stepping over should stop: 0.
+ Plan stack final state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+      Element 1: Stepping over line problem03.c:23:5 using ranges: [0x0000000100003f4c-0x0000000100003f58).
+
+ vvvvvvvv Thread::ShouldStop End (returning 0) vvvvvvvv
+ ThreadList::ShouldStop overall should_stop = 0
+ ThreadList::ShouldReportStop 1 threads
+ ThreadPlanStepRange::ShouldReportStop() returning vote -1
+
+ Thread::ShouldReportStop() tid = 0x5b02: returning vote -1 for current plan
+ Returning no
+ Process::ShouldBroadcastEvent: should_resume: 1 state: stopped was_restarted: 0 report_stop_vote: -1.
+ Process::ShouldBroadcastEvent (0x126611f20) Restarting process from state: stopped
+ Process::PrivateResume() m_stop_id = 27, public state: running private state: stopped
+ WillResume Thread #1 (0x0x146678598): tid = 0x5b02, pc = 0x100003f54, sp = 0x16fdfed80, fp = 0x16fdfefa0, plan = 'Step range stepping over', state = stepping, stop others = 1
+ (plugin = gdb-remote, state = running)
+ Process thinks the process has resumed.
+ Process::ShouldBroadcastEvent (0x126611f20) => new state: stopped, last broadcast state: running - NO
+ Process::HandlePrivateEvent (pid = 1960) suppressing state stopped (old state running): should_broadcast == false
+ timeout = <infinite>, event_sp)...
+ Process::ShouldBroadcastEvent (0x137a08390) => new state: running, last broadcast state: running - NO
+ Process::HandlePrivateEvent (pid = 1960) suppressing state running (old state running): should_broadcast == false
+ timeout = <infinite>, event_sp)...
+ (plugin = gdb-remote, state = stopped)
+ (plugin = gdb-remote, state = stopped, stop_id = 28
+ 0x146678598: tid = 0x5b02: stop info = <NULL> (stop_id = 28)
+ 0x146678598: tid = 0x5b02: stop info = trace (stop_id = 28)
+ 
+ ThreadList::ShouldStop: 1 threads, 1 unsuspended threads
+ Thread::ShouldStop(0x146678598) for tid = 0x5b02 0x5b02, pc = 0x000000018ff2d058
+ ^^^^^^^^ Thread::ShouldStop Begin ^^^^^^^^
+ Plan stack initial state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+      Element 1: Stepping over line problem03.c:23:5 using ranges: [0x0000000100003f4c-0x0000000100003f58).
+
+ ThreadPlanStepOverRange reached 0x000000018ff2d058.
+ Couldn't find step through plan from address 0x18ff2d058.
+ ShouldStopHere callback returned 1 from 0x18ff2d058.
+ Plan Step range stepping over should stop: 1.
+ Completed step through range plan.
+ Popping plan: "Step range stepping over", tid = 0x5b02.
+ Plan stack final state:
+  thread #1: tid = 0x5b02:
+    Active plan stack:
+      Element 0: Base thread plan.
+    Completed plan stack:
+      Element 0: Stepping over line problem03.c:23:5 using ranges: [0x0000000100003f4c-0x0000000100003f58).
+
+ vvvvvvvv Thread::ShouldStop End (returning 1) vvvvvvvv
+ ThreadList::ShouldStop overall should_stop = 1
+ Process::ShouldBroadcastEvent (0x137a08390) => new state: stopped, last broadcast state: stopped - YES
+ Process::HandlePrivateEvent (pid = 1960) broadcasting new state stopped (old state stopped) to public
+ timeout = <infinite>, event_sp)...
+ (plugin = gdb-remote, state = stopped, restarted = 0)
+ (plugin = gdb-remote, state = stopped) -- unlocking run lock
+ ThreadPlanStepOverRange reached 0x000000018ff2d058.
+ Couldn't find step through plan from address 0x18ff2d058.
+ ShouldStopHere callback returned 1 from 0x18ff2d058.
+ Frame #0 not recognized
+ Processing command: q
+ HandleCommand, cmd_obj : 'quit'
+ HandleCommand, (revised) command_string: 'quit'
+ HandleCommand, wants_raw_input:'False'
+ HandleCommand, command line after removing command name(s): ''
+ HandleCommand, command did not succeed
+ Discarding thread plans for thread (tid = 0x5b02, force 1)
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() remove at addr = 0x100003e8c
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() remove at addr = 0x100003ec0
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() remove at addr = 0x100003f18
+ GDBRemoteCommunicationClient::SendGDBStoppointTypePacket() remove at addr = 0x18ff28e20
+ ::waitpid (pid = 1960, &status, 0) => pid = 1960, status = 0x00000009 (SIGNALED), signal = 9, exit_status = -1
+ pid = 1960, signal = 9, status = -1
+ (plugin = gdb-remote status=9 (0x00000009), description="killed")
+ Process::ControlPrivateStateThread (signal = 1)
+ Sending control event of type: 1.
+ Process::RunPrivateStateThread (arg = 0x13736dc00, pid = 1960) got a control event: 1
+ Process::RunPrivateStateThread (arg = 0x13736dc00, pid = 1960) thread exiting...
+ Target::RemoveBreakpointByID (break_id = -3, internal = yes)
+
+ Target::DisableBreakpointByID (break_id = -3, internal = yes)
+
+ Target::DisableAllWatchpoints
+
+ Target::ClearAllWatchpointHitCounts
+
+ Target::ClearAllWatchpointHistoricValues
+
+ ::waitpid (pid = 1961, &status, 0) => pid = 1961, status = 0x00000000 (EXITED), signal = 0, exit_status = 0
+ Went to stop the private state thread, but it was already invalid.
+ Couldn't get scratch TypeSystemClang
