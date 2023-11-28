@@ -1,40 +1,61 @@
 /*Write a program to add two fractions*/
 #include <stdio.h>
+
 typedef struct {
     int num, den;
 } Fraction;
+
+Fraction input_fraction();
+int find_gcd(int a, int b);
+Fraction add_fractions(Fraction f1, Fraction f2);
+void output(Fraction f1, Fraction f2, Fraction sum);
+
+
+int main() {
+    Fraction fraction1, fraction2, result;
+
+    printf("Enter Fraction 1:\n");
+    fraction1 = input_fraction();
+
+    printf("Enter Fraction 2:\n");
+    fraction2 = input_fraction();
+
+    result = add_fractions(fraction1, fraction2);
+
+    output(fraction1, fraction2, result);
+
+    return 0;
+}
+
 Fraction input_fraction() {
     Fraction f;
-    printf("Enter the fraction (numerator denominator): ");
-    scanf("%d %d", &f.num, &f.den);
+    printf("Enter numerator: ");
+    scanf("%d", &f.num);
+    printf("Enter denominator: ");
+    scanf("%d", &f.den);
     return f;
 }
+
 int find_gcd(int a, int b) {
-    while (b != 0) {
-        int c = b;
-        b = a % b;
-        a = c;
-    }
-    return a;
+    if (b == 0)
+        return a;
+    return find_gcd(b, a % b);
 }
+
 Fraction add_fractions(Fraction f1, Fraction f2) {
-    Fraction sum;
-    sum.num = f1.num * f2.den + f2.num * f1.den;
-    sum.den = f1.den * f2.den;
-    int gcd = find_gcd(sum.num, sum.den);
-    sum.num = sum.num / gcd;
-    sum.num = sum.den / gcd;
-    return sum;
+    Fraction result;
+    result.num = f1.num * f2.den + f2.num * f1.den;
+    result.den = f1.den * f2.den;
+
+    
+    int gcd = find_gcd(result.num, result.den);
+    result.num /= gcd;
+    result.den /= gcd;
+
+    return result;
 }
-void output(Fraction f1, Fraction f2, Fraction f3, Fraction sum) {
-    printf("%d/%d + %d/%d = %d/%d\n", f1.num, f1.den, f2.num, f2.den, f3.num, f3.den);
-    printf("= %d/%d\n", sum.num, sum.den);
-}
-int main() {
-    Fraction f1, f2, sum;
-    f1 = input_fraction();
-    f2 = input_fraction();
-    sum = add_fractions(f1, f2);
-    output(f1, f2, sum, sum);
-    return 0;
+
+void  output(Fraction f1, Fraction f2, Fraction sum) {
+    printf("\nResult of adding fractions %d/%d and %d/%d is: %d/%d\n",
+           f1.num, f1.den, f2.num, f2.den, sum.num, sum.den);
 }
