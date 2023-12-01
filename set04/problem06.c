@@ -3,11 +3,6 @@
 #include <string.h>
 
 #define MAX_LENGTH 100
-
-void input_string(char *a);
-int count_words(char *string);
-void output(char *string, int no_words);
-
 int main() {
     char input[MAX_LENGTH];
     input_string(input);

@@ -1,0 +1,22 @@
+01/12/2023, 22:50:59 - /Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set04/problem06.c:8:5: error: call to undeclared function 'input_string'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    input_string(input);
+    ^
+01/12/2023, 22:50:59 - /Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set04/problem06.c:9:22: error: call to undeclared function 'count_words'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    int word_count = count_words(input);
+                     ^
+/Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set04/problem06.c:10:5: error: call to undeclared function 'output'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    output(input, word_count);
+    ^
+/Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set04/problem06.c:14:6: error: conflicting types for 'input_string'
+void input_string(char *a) {
+     ^
+/Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set04/problem06.c:8:5: note: previous implicit declaration is here
+    input_string(input);
+    ^
+/Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set04/problem06.c:34:6: error: conflicting types for 'output'
+void output(char *string, int no_words) {
+     ^
+/Users/shafinazahsan/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-ShafinazAhsan/set04/problem06.c:10:5: note: previous implicit declaration is here
+    output(input, word_count);
+    ^
+01/12/2023, 22:50:59 - 5 errors generated.
