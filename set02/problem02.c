@@ -1,6 +1,5 @@
 /*Write a program to find if a triangle is scalene*/
 #include<stdio.h>
-#include<stdbool.h>
 int input_side(){
     int a;
     printf("Enter the sides : ");
