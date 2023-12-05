@@ -4,22 +4,6 @@
 typedef struct {
     int num, den;
 } Fraction;
-int main() {
-    Fraction fraction1, fraction2, result;
-
-    printf("Enter Fraction 1:\n");
-    fraction1 = input_fraction();
-
-    printf("Enter Fraction 2:\n");
-    fraction2 = input_fraction();
-
-    result = add_fractions(fraction1, fraction2);
-
-    output(fraction1, fraction2, result);
-
-    return 0;
-}
-
 Fraction input_fraction() {
     Fraction f;
     printf("Enter numerator: ");
@@ -52,3 +36,19 @@ void  output(Fraction f1, Fraction f2, Fraction sum) {
     printf("\nResult of adding fractions %d/%d and %d/%d is: %d/%d\n",
            f1.num, f1.den, f2.num, f2.den, sum.num, sum.den);
 }
+int main() {
+    Fraction fraction1, fraction2, result;
+
+    printf("Enter Fraction 1:\n");
+    fraction1 = input_fraction();
+
+    printf("Enter Fraction 2:\n");
+    fraction2 = input_fraction();
+
+    result = add_fractions(fraction1, fraction2);
+
+    output(fraction1, fraction2, result);
+
+    return 0;
+}
+
