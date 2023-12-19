@@ -1,8 +1,3 @@
-/*#include<stdio.h>
-int main(){
-    printf("Testing");
-}*/
-
 #include<stdio.h>
 int input(){
     int n;
@@ -12,19 +7,16 @@ int input(){
 }
 int isFactorial(int n){
     int fact=1;
-    for(int i=1; i<=n;i++){
+    for(int i=1; fact<=n;i++){
         if(fact==n){
-            fact*=i;
             return 1;
         }
-        else{
-            return 0;
-        }
+        fact=fact*i;
     }
     return 0;
 }
-void output(int n){
-    if(isFactorial){
+void output(int n, int isFact){
+    if(isFact){
         printf("%d is a factorial.", n);
     }
     else{
@@ -32,8 +24,9 @@ void output(int n){
     }
 }
 int main(){
-    int n;
-    isFactorial(n);
-    output(n);
+    int n, f;
+    n=input();
+    f=isFactorial(n);
+    output(n,f);
     return 0;
 }
